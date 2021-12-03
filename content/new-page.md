@@ -1,6 +1,5 @@
 +++
 description = "asdasfasfdsa"
-draft = true
 title = "New page"
 
 +++
