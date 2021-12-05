@@ -1,11 +1,57 @@
-baseURL = 'https://oxddr.github.io/kingsofwarpl/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
+baseURL = 'https://oxddr.github.io/kingsofwarpl'
+languageCode = 'pl'
+title = 'Strona polskiej społeczności Kings of War'
+copyright = "Kings of War Polska is an unofficial site not affiliated with Mantic Games. Kings of War is a trademark of Mantic Games. Jan Łukaszewicz"
+
+theme = ["hugo-initio"]
 
 [params]
   featured_image = "/images/kowbattle.jpeg"
+  banner = "/images/kowbattle.jpeg"
   site_logo = "/images/logo.png"
-  description = "The last theme you'll ever need. Maybe."
+  avatar = "/images/logo2.png"
+  avatarclass = "square22"
+  # name = 'Kings of War Polska'
+  description = 'Strona polskiej społeczności gry Kings of War'
+  DateForm = "January 2, 2006"
 
-sectionPagesMenu = "main"
+[menu]
+  [[menu.main]]
+    name = '🏠'
+    weight = -110
+  [[menu.main]]
+    name = "O grze"
+    url = "about"
+    weight = 5
+  [[menu.main]]
+    name = 'Jak zacząć?'
+    weight = 10
+    url = "getting_started"
+  [[menu.main]]
+    name = "Społeczność"
+    weight = 20
+    url = "community"
+    weight = 10
+  [[menu.main]]
+    name = "Wydarzenia"
+    url = "events"
+    weight = 30
+  [[menu.main]]
+    identifier = "liga"
+    name = "Liga"
+    weight = 40
+  [[menu.main]]
+    name = "O lidze"
+    url = "league"
+    weight = 5
+    parent = "liga"
+  [[menu.main]]
+    name = "Regulamin 2021"
+    url = "bylaw"
+    parent = "liga"
+    weight = 10
+  [[menu.main]]
+    name = "Ranking 2021"
+    url = "ranking"
+    parent = "liga"
+    weight = 20

@@ -1,6 +1,5 @@
 ---
-title: Kings of War Polska
-description: Strona polskiej społeczności Kings of War
+title: O lidze
 ---
 
 Lorem ipsum dolor sit amet, *consectetur* adipisicing elit, sed do eiusmod
