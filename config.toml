@@ -31,7 +31,6 @@ theme = ["hugo-initio"]
     name = "Społeczność"
     weight = 20
     url = "community"
-    weight = 10
   [[menu.main]]
     name = "Wydarzenia"
     url = "events"
