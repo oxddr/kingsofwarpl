@@ -1,6 +1,6 @@
 ---
 title: Wydarzenia
-featured_image: "/images/kowbattle.jpeg"
+featured_image: ''
 
 ---
 Tu pojawią się nadchodzące wydarzenia. 
