@@ -1,7 +1,7 @@
 baseURL = 'https://oxddr.github.io/kingsofwarpl'
 languageCode = 'pl'
 title = 'Strona polskiej społeczności Kings of War'
-copyright = "Kings of War Polska is an unofficial site not affiliated with Mantic Games. Kings of War is a trademark of Mantic Games. Jan Łukaszewicz"
+copyright = "2021 Jan Łukaszewicz. Kings of War Polska is an unofficial site not affiliated with Mantic Games. Kings of War is a trademark of Mantic Games."
 
 theme = ["hugo-initio"]
 

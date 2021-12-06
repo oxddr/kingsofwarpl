@@ -1,0 +1,51 @@
+{{ define "main" }}
+<main id="main">
+  <div class="container">
+    <div class="row topspace">
+      <div class="col-sm-8 col-sm-offset-2">
+        <header class="entry-header">
+ 	  <h1 class="entry-title">
+            <a href="{{ .Permalink }}" rel="bookmark">
+              {{ .Title }}
+            </a>
+          </h1>
+	</header>
+	<div class="entry-content">
+          {{ $currentPlayer := .Params.Player }}
+          {{ range $.Site.Data.ranking2021.ranking }}
+          {{ if eq .id $currentPlayer }}
+          <a href="https://tabletop.to/profile/{{ .id }}">Profil tabletop.to</a>
+          <h2>Liga 2021</h2>
+
+          <ul>
+            <li>Miejsce: {{ .rank }}</li>
+            <li>Punkty: {{ .points }} / {{ .points_total }}</li>
+          </ul>
+
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <td>Data</td>
+                <td>Turniej</td>
+                <td>Punkty</td>
+              </tr>
+            </thead>
+            <tbody>
+              {{ range .results }}
+              <tr class="{{ if .is_ranking }}success{{ end }}">
+                <td>{{ time.Format "2006-01-02" .tournament.date }}</td>
+                <td><a href="{{ .tournament.url }}">{{ .tournament.name }}</a></td>
+                <td>{{ .points }}</td>
+              </tr>
+              {{ end }}
+            </tbody>
+          </table>
+          {{ end }}
+          {{ end }}
+	</div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</main>
+{{ end }}

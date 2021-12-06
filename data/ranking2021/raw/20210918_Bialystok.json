@@ -1,0 +1,100 @@
+{
+	"tournament": {
+		"name": "4 Turniej Mistrzostw Polski Kings of War 2021-BIAŁOSTOCKI DEBIUT",
+		"date": "2021-09-18T00:00:00Z",
+		"location": "Białystok",
+		"url": "https://tabletop.to/4-turniej-mistrzostw-polski-kings-of-war-2021biaostocki-debiut"
+	},
+	"players": [
+		{
+			"id": "makras",
+			"name": "Makras",
+			"rank": 1,
+			"faction": "",
+			"tp": 50,
+			"bonus_tp": 0,
+			"attrition_points": 5700
+		},
+		{
+			"id": "lires",
+			"name": "Lires",
+			"rank": 2,
+			"faction": "",
+			"tp": 37,
+			"bonus_tp": 0,
+			"attrition_points": 4790
+		},
+		{
+			"id": "ddr",
+			"name": "ddr",
+			"rank": 3,
+			"faction": "",
+			"tp": 41,
+			"bonus_tp": -5,
+			"attrition_points": 5610
+		},
+		{
+			"id": "bartoszwaw",
+			"name": "BartoszWaw",
+			"rank": 4,
+			"faction": "",
+			"tp": 35,
+			"bonus_tp": 0,
+			"attrition_points": 4490
+		},
+		{
+			"id": "lukasz-jarochowski",
+			"name": "Lukasz Jarochowski",
+			"rank": 5,
+			"faction": "",
+			"tp": 27,
+			"bonus_tp": 0,
+			"attrition_points": 3280
+		},
+		{
+			"id": "rafastrongestavenger-swierkot",
+			"name": "Rafał\"StrongestAvenger\" Świerkot",
+			"rank": 6,
+			"faction": "",
+			"tp": 31,
+			"bonus_tp": -5,
+			"attrition_points": 4335
+		},
+		{
+			"id": "damian-fakapu-fiedoruk",
+			"name": "Damian \"Fakapu\" Fiedoruk",
+			"rank": 7,
+			"faction": "",
+			"tp": 26,
+			"bonus_tp": 0,
+			"attrition_points": 3980
+		},
+		{
+			"id": "kacper-alien-szczytowski",
+			"name": "Kacper \"Alien\" Szczytowski",
+			"rank": 8,
+			"faction": "",
+			"tp": 22,
+			"bonus_tp": 0,
+			"attrition_points": 3815
+		},
+		{
+			"id": "kacper-rasinski",
+			"name": "Kacper Rasiński",
+			"rank": 9,
+			"faction": "",
+			"tp": 21,
+			"bonus_tp": -5,
+			"attrition_points": 4175
+		},
+		{
+			"id": "maciejufo-szczytowski",
+			"name": "Maciej\"UFO\" Szczytowski",
+			"rank": 10,
+			"faction": "",
+			"tp": 10,
+			"bonus_tp": 0,
+			"attrition_points": 3079
+		}
+	]
+}
