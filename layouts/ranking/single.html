@@ -1,0 +1,40 @@
+{{ define "main" }}
+<main id="main">
+  <div class="container">
+    <div class="row topspace">
+      <div class="col-sm-8 col-sm-offset-2">
+        <header class="entry-header">
+ 	  <h1 class="entry-title">
+            <a href="{{ .Permalink }}" rel="bookmark">
+              {{ .Title }}
+            </a>
+          </h1>
+	</header>
+	<div class="entry-content" >
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <td>#</td>
+                <td>Gracz</td>
+                <td>Liczba puntków</td>
+              </tr>
+            </thead>
+            <tbody>
+              {{ range $.Site.Data.ranking2021.ranking }}
+              <tr>
+                <td>{{ .rank }}</td>
+                <td>
+                  <a href="{{ .id | printf "player/%s" | relURL }}" >{{ .player }}</a>
+                </td>
+                <td>{{ .points }} / {{ .points_total }}</td>
+              </tr>
+              {{ end }}
+            </tbody>
+          </table>
+	</div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</main>
+{{ end }}
