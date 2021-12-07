@@ -351,35 +351,6 @@
 		"rank": 9
 	},
 	{
-		"player": "Stanisław \"Lajon\" Urbaniak",
-		"id": "stanisaw-lajon-urbaniak",
-		"results": [
-			{
-				"tournament": {
-					"name": "1 turniej ligi Kings of war 2021 [Warszawa]",
-					"date": "2021-01-24T00:00:00Z",
-					"location": "Warszawa",
-					"url": "https://tabletop.to/1-turniej-ligi-kings-of-war-2021-warszawa"
-				},
-				"points": 22,
-				"is_ranking": true
-			},
-			{
-				"tournament": {
-					"name": "III turniej Ligi Kings of War Polska 2021",
-					"date": "2021-04-18T00:00:00Z",
-					"location": "Warszawa",
-					"url": "https://tabletop.to/iii-turniej-ligi-kings-of-war-polska-2021"
-				},
-				"points": 24,
-				"is_ranking": true
-			}
-		],
-		"points": 46,
-		"points_total": 46,
-		"rank": 10
-	},
-	{
 		"player": "Kacper \"Alien\" Szczytowski",
 		"id": "kacper-alien-szczytowski",
 		"results": [
@@ -401,6 +372,35 @@
 					"url": "https://tabletop.to/4-turniej-mistrzostw-polski-kings-of-war-2021biaostocki-debiut"
 				},
 				"points": 23,
+				"is_ranking": true
+			}
+		],
+		"points": 46,
+		"points_total": 46,
+		"rank": 10
+	},
+	{
+		"player": "Stanisław \"Lajon\" Urbaniak",
+		"id": "stanisaw-lajon-urbaniak",
+		"results": [
+			{
+				"tournament": {
+					"name": "1 turniej ligi Kings of war 2021 [Warszawa]",
+					"date": "2021-01-24T00:00:00Z",
+					"location": "Warszawa",
+					"url": "https://tabletop.to/1-turniej-ligi-kings-of-war-2021-warszawa"
+				},
+				"points": 22,
+				"is_ranking": true
+			},
+			{
+				"tournament": {
+					"name": "III turniej Ligi Kings of War Polska 2021",
+					"date": "2021-04-18T00:00:00Z",
+					"location": "Warszawa",
+					"url": "https://tabletop.to/iii-turniej-ligi-kings-of-war-polska-2021"
+				},
+				"points": 24,
 				"is_ranking": true
 			}
 		],

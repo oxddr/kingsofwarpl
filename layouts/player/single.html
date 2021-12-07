@@ -12,34 +12,46 @@
 	</header>
 	<div class="entry-content">
           {{ $currentPlayer := .Params.Player }}
-          {{ range $.Site.Data.ranking2021.ranking }}
+          {{ range $.Site.Data.season2021.ranking }}
           {{ if eq .id $currentPlayer }}
-          <a href="https://tabletop.to/profile/{{ .id }}">Profil tabletop.to</a>
-          <h2>Liga 2021</h2>
 
-          <ul>
-            <li>Miejsce: {{ .rank }}</li>
-            <li>Punkty: {{ .points }} / {{ .points_total }}</li>
-          </ul>
+          <div class="text-center">
+            <a href="https://tabletop.to/profile/{{ .id }}">
+              Profil tabletop.to <span class="glyphicon glyphicon-new-window"></span>
+            </a>
+          </div>
 
-          <table class="table table-hover">
-            <thead>
-              <tr>
-                <td>Data</td>
-                <td>Turniej</td>
-                <td>Punkty</td>
-              </tr>
-            </thead>
-            <tbody>
-              {{ range .results }}
-              <tr class="{{ if .is_ranking }}success{{ end }}">
-                <td>{{ time.Format "2006-01-02" .tournament.date }}</td>
-                <td><a href="{{ .tournament.url }}">{{ .tournament.name }}</a></td>
-                <td>{{ .points }}</td>
-              </tr>
-              {{ end }}
-            </tbody>
-          </table>
+          <div class="panel panel-default">
+            <div class="panel-heading">Liga 2021</div>
+
+            <div class="panel-body">
+              <dl class="dl-horizontal">
+                <dt>Miejsce:</dt>
+                <dd>{{ .rank }}</dd>
+                <dt>Punkty:</dt>
+                <dd>{{ .points }} / {{ .points_total }}</dd>
+              </dl>
+            </div>
+
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <td>Data</td>
+                  <td>Turniej</td>
+                  <td>Punkty</td>
+                </tr>
+              </thead>
+              <tbody>
+                {{ range .results }}
+                <tr class="{{ if .is_ranking }}success{{ end }}">
+                  <td>{{ time.Format "2006-01-02" .tournament.date }}</td>
+                  <td><a href="{{ .tournament.url }}">{{ .tournament.name }}</a></td>
+                  <td>{{ .points }}</td>
+                </tr>
+                {{ end }}
+              </tbody>
+            </table>
+          </div>
           {{ end }}
           {{ end }}
 	</div>
