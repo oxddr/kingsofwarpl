@@ -1,7 +1,5 @@
 ---
 title: Regulamin Ligi Kings of War 2021
-featured_image: "/images/kowbattle.jpeg"
-
 ---
 _Data aktualizacji: 8 grudnia 2020_
 
@@ -63,7 +61,7 @@ _Data aktualizacji: 8 grudnia 2020_
        * #1: 30 punktów
        * #2: 29 punktów
        * #3: 28 punktów
-       * … 
+       * …
        * #30: 1 punkt
     2. W przypadku większej liczby graczy niż 30, liczba punktów za pierwsze miejsce wynosi tyle co liczba graczy. Punkty za pozostałe miejsca przyznawane są analogicznie do tego jak w punkcie 12.1.
     3. Do ostatecznego wyniku w rankingu liczy się punktacja z najlepszych X-2 turniejów, gdzie X to liczba rozegranych turniejów w lidze w sezonie.

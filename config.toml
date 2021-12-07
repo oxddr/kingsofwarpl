@@ -1,47 +1,54 @@
-baseURL = "https://oxddr.github.io/kingsofwarpl"
+baseURL = 'https://oxddr.github.io/kingsofwarpl'
+languageCode = 'pl'
+title = 'Strona polskiej społeczności Kings of War'
 copyright = "2021 Jan Łukaszewicz. Kings of War Polska is an unofficial site not affiliated with Mantic Games. Kings of War is a trademark of Mantic Games."
-languageCode = "pl"
+
 theme = ["hugo-initio"]
-title = "Strona polskiej społeczności Kings of War"
-[[menu.main]]
-identifier = "liga"
-name = "Liga"
-weight = 9
-[[menu.main]]
-name = "Ranking 2021"
-parent = "liga"
-url = "ranking"
-weight = 6
-[[menu.main]]
-name = "Regulamin 2021"
-parent = "liga"
-url = "bylaw"
-weight = 4
-[[menu.main]]
-name = "O lidze"
-parent = "liga"
-url = "league"
-weight = 2
-[[menu.main]]
-name = "Wydarzenia"
-url = "events"
-weight = 8
-[[menu.main]]
-name = "Jak zacząć?"
-url = "getting_started"
-weight = 5
-[[menu.main]]
-name = "O grze"
-url = "about"
-weight = 3
-[[menu.main]]
-name = "🏠"
-weight = 1
+
 [params]
-DateForm = "January 2, 2006"
-avatar = "/images/logo2.png"
-avatarclass = "square22"
-banner = "/images/kowbattle.jpeg"
-description = "Strona polskiej społeczności gry Kings of War"
-featured_image = "/images/kowbattle.jpeg"
-site_logo = "/images/logo.png"
+  banner = "/images/kowbattle.jpeg"
+  site_logo = "/images/logo.png"
+  avatar = "/images/logo2.png"
+  avatarclass = "square22"
+  description = 'Strona polskiej społeczności gry Kings of War'
+  DateForm = "2006-01-02"
+
+[menu]
+  [[menu.main]]
+    name = '🏠'
+    weight = -110
+  [[menu.main]]
+    name = "O grze"
+    url = "about"
+    weight = 5
+  [[menu.main]]
+    name = 'Jak zacząć?'
+    weight = 10
+    url = "getting_started"
+  [[menu.main]]
+    name = "Jak nas znaleźć?"
+    weight = 20
+    url = "community"
+  [[menu.main]]
+    name = "Wydarzenia"
+    url = "events"
+    weight = 30
+  [[menu.main]]
+    identifier = "liga"
+    name = "Liga"
+    weight = 40
+  [[menu.main]]
+    name = "O lidze"
+    url = "league"
+    weight = 5
+    parent = "liga"
+  [[menu.main]]
+    name = "Regulamin 2021"
+    url = "bylaw"
+    parent = "liga"
+    weight = 10
+  [[menu.main]]
+    name = "Ranking 2021"
+    url = "ranking"
+    parent = "liga"
+    weight = 20
