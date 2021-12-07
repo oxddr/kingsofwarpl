@@ -27,10 +27,6 @@ name = "Wydarzenia"
 url = "events"
 weight = 8
 [[menu.main]]
-name = "Społeczność"
-url = "community"
-weight = 7
-[[menu.main]]
 name = "Jak zacząć?"
 url = "getting_started"
 weight = 5
