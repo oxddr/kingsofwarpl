@@ -10,7 +10,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/oxddr/kingsofwarpl/tools"
+	"github.com/oxddr/kingsofwarpl/tools/model"
 )
 
 var (
@@ -29,24 +29,29 @@ func ListAll(dir string) ([]string, error) {
 	return files, err
 }
 
-func Rank2021(l *tools.League) []*tools.RankedPlayer {
-	nameToPlayer := map[string]*tools.RankedPlayer{}
+func Rank2021(l *model.League) []*model.RankedPlayer {
+	nameToPlayer := map[string]*model.RankedPlayer{}
 
 	for _, t := range l.Tournaments {
 		for _, p := range t.Players {
-			newPts := 30 - p.Rank + 1
+			basePoints := 30
+			if len(t.Players) > 30 {
+				basePoints = len(t.Players)
+			}
+
+			newPts := basePoints - p.Rank + 1
 			if newPts < 0 {
 				newPts = 0
 			}
 
 			rankedPlayer, ok := nameToPlayer[p.Name]
 			if !ok {
-				rankedPlayer = &tools.RankedPlayer{
+				rankedPlayer = &model.RankedPlayer{
 					Name: p.Name,
 					ID:   p.ID,
 				}
 			}
-			rankedPlayer.Results = append(rankedPlayer.Results, &tools.Result{
+			rankedPlayer.Results = append(rankedPlayer.Results, &model.Result{
 				Tournament: t.Tournament,
 				Points:     newPts,
 			})
@@ -60,7 +65,7 @@ func Rank2021(l *tools.League) []*tools.RankedPlayer {
 	}
 	log.Printf("Counting top %d scores", topN)
 
-	players := []*tools.RankedPlayer{}
+	players := []*model.RankedPlayer{}
 	for _, player := range nameToPlayer {
 		sort.Slice(player.Results, func(i, j int) bool {
 			return player.Results[i].Points > player.Results[j].Points
@@ -102,7 +107,7 @@ func main() {
 		log.Fatalf("Unable to list files from %q: %v", *resultsDir, err)
 	}
 
-	league, err := tools.LeagueFromJSON(files)
+	league, err := model.LeagueFromJSON(files)
 	if err != nil {
 		log.Fatalf("Unable to build League from files: %v", err)
 	}

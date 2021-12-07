@@ -12,7 +12,7 @@ import (
 	"time"
 
 	"github.com/PuerkitoBio/goquery"
-	"github.com/oxddr/kingsofwarpl/tools"
+	"github.com/oxddr/kingsofwarpl/tools/model"
 	"go.uber.org/multierr"
 )
 
@@ -47,11 +47,11 @@ func ExtractLocation(doc *goquery.Document) string {
 	return loc
 }
 
-func ExtractPlayers(doc *goquery.Document) ([]*tools.Player, error) {
-	var players []*tools.Player
+func ExtractPlayers(doc *goquery.Document) ([]*model.Player, error) {
+	var players []*model.Player
 	var mErr, err error
 	doc.Find("#ladder tbody tr").Each(func(_ int, s *goquery.Selection) {
-		p := &tools.Player{}
+		p := &model.Player{}
 		s.Find("td").Each(func(i int, s *goquery.Selection) {
 			switch i {
 			case 0:
@@ -129,8 +129,8 @@ func main() {
 		log.Fatalf("Unable to extract tournament's players: %v", err)
 	}
 
-	t := &tools.TournamentResults{
-		Tournament: &tools.Tournament{
+	t := &model.TournamentResults{
+		Tournament: &model.Tournament{
 			Name:     ExtractName(doc),
 			Date:     dt,
 			Location: ExtractLocation(doc),

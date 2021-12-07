@@ -1,9 +1,6 @@
 public/
 .hugo_build.lock
 
-/players
-/ranking
-/tttscraper
-/tools/players/players
-/tools/ranking/ranking
-/tools/tttscraper/tttscraper
+/tools/cmd/players/players
+/tools/cmd/ranking/ranking
+/tools/cmd/tttscraper/tttscraper

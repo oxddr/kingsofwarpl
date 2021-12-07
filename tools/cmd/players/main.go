@@ -8,7 +8,7 @@ import (
 	"path"
 	"text/template"
 
-	"github.com/oxddr/kingsofwarpl/tools"
+	"github.com/oxddr/kingsofwarpl/tools/model"
 	"gopkg.in/yaml.v3"
 )
 
@@ -33,7 +33,7 @@ type tplData struct {
 func main() {
 	flag.Parse()
 
-	ranking, err := tools.RankingFromJSON(*rankingPath)
+	ranking, err := model.RankingFromJSON(*rankingPath)
 	if err != nil {
 		log.Fatalf("Unable to create ranking from %q: %v", *rankingPath, err)
 	}
