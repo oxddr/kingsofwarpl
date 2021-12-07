@@ -10,6 +10,7 @@
 					"location": "Warszawa",
 					"url": "https://tabletop.to/1-turniej-ligi-kings-of-war-2021-warszawa"
 				},
+				"rank": 1,
 				"points": 30,
 				"is_ranking": true
 			},
@@ -20,6 +21,7 @@
 					"location": "Inny Wymiar w Katowicach",
 					"url": "https://tabletop.to/ii-turniej-cyklu-mistrzostw-polski-kings-of-war-2021"
 				},
+				"rank": 2,
 				"points": 29,
 				"is_ranking": false
 			},
@@ -30,6 +32,7 @@
 					"location": "Warszawa",
 					"url": "https://tabletop.to/iii-turniej-ligi-kings-of-war-polska-2021"
 				},
+				"rank": 4,
 				"points": 27,
 				"is_ranking": false
 			},
@@ -40,6 +43,7 @@
 					"location": "Białystok",
 					"url": "https://tabletop.to/4-turniej-mistrzostw-polski-kings-of-war-2021biaostocki-debiut"
 				},
+				"rank": 1,
 				"points": 30,
 				"is_ranking": true
 			}
@@ -59,6 +63,7 @@
 					"location": "Warszawa",
 					"url": "https://tabletop.to/1-turniej-ligi-kings-of-war-2021-warszawa"
 				},
+				"rank": 8,
 				"points": 23,
 				"is_ranking": false
 			},
@@ -69,6 +74,7 @@
 					"location": "Inny Wymiar w Katowicach",
 					"url": "https://tabletop.to/ii-turniej-cyklu-mistrzostw-polski-kings-of-war-2021"
 				},
+				"rank": 3,
 				"points": 28,
 				"is_ranking": false
 			},
@@ -79,6 +85,7 @@
 					"location": "Warszawa",
 					"url": "https://tabletop.to/iii-turniej-ligi-kings-of-war-polska-2021"
 				},
+				"rank": 1,
 				"points": 30,
 				"is_ranking": true
 			},
@@ -89,6 +96,7 @@
 					"location": "Białystok",
 					"url": "https://tabletop.to/4-turniej-mistrzostw-polski-kings-of-war-2021biaostocki-debiut"
 				},
+				"rank": 2,
 				"points": 29,
 				"is_ranking": true
 			}
@@ -108,6 +116,7 @@
 					"location": "Warszawa",
 					"url": "https://tabletop.to/1-turniej-ligi-kings-of-war-2021-warszawa"
 				},
+				"rank": 2,
 				"points": 29,
 				"is_ranking": true
 			},
@@ -118,6 +127,7 @@
 					"location": "Inny Wymiar w Katowicach",
 					"url": "https://tabletop.to/ii-turniej-cyklu-mistrzostw-polski-kings-of-war-2021"
 				},
+				"rank": 1,
 				"points": 30,
 				"is_ranking": true
 			}
@@ -137,6 +147,7 @@
 					"location": "Warszawa",
 					"url": "https://tabletop.to/1-turniej-ligi-kings-of-war-2021-warszawa"
 				},
+				"rank": 4,
 				"points": 27,
 				"is_ranking": true
 			},
@@ -147,6 +158,7 @@
 					"location": "Warszawa",
 					"url": "https://tabletop.to/iii-turniej-ligi-kings-of-war-polska-2021"
 				},
+				"rank": 2,
 				"points": 29,
 				"is_ranking": true
 			}
@@ -166,6 +178,7 @@
 					"location": "Warszawa",
 					"url": "https://tabletop.to/1-turniej-ligi-kings-of-war-2021-warszawa"
 				},
+				"rank": 5,
 				"points": 26,
 				"is_ranking": false
 			},
@@ -176,6 +189,7 @@
 					"location": "Inny Wymiar w Katowicach",
 					"url": "https://tabletop.to/ii-turniej-cyklu-mistrzostw-polski-kings-of-war-2021"
 				},
+				"rank": 4,
 				"points": 27,
 				"is_ranking": true
 			},
@@ -186,6 +200,7 @@
 					"location": "Warszawa",
 					"url": "https://tabletop.to/iii-turniej-ligi-kings-of-war-polska-2021"
 				},
+				"rank": 6,
 				"points": 25,
 				"is_ranking": false
 			},
@@ -196,6 +211,7 @@
 					"location": "Białystok",
 					"url": "https://tabletop.to/4-turniej-mistrzostw-polski-kings-of-war-2021biaostocki-debiut"
 				},
+				"rank": 3,
 				"points": 28,
 				"is_ranking": true
 			}
@@ -215,6 +231,7 @@
 					"location": "Warszawa",
 					"url": "https://tabletop.to/1-turniej-ligi-kings-of-war-2021-warszawa"
 				},
+				"rank": 6,
 				"points": 25,
 				"is_ranking": true
 			},
@@ -225,6 +242,7 @@
 					"location": "Warszawa",
 					"url": "https://tabletop.to/iii-turniej-ligi-kings-of-war-polska-2021"
 				},
+				"rank": 9,
 				"points": 22,
 				"is_ranking": false
 			},
@@ -235,6 +253,7 @@
 					"location": "Białystok",
 					"url": "https://tabletop.to/4-turniej-mistrzostw-polski-kings-of-war-2021biaostocki-debiut"
 				},
+				"rank": 4,
 				"points": 27,
 				"is_ranking": true
 			}
@@ -254,6 +273,7 @@
 					"location": "Warszawa",
 					"url": "https://tabletop.to/iii-turniej-ligi-kings-of-war-polska-2021"
 				},
+				"rank": 5,
 				"points": 26,
 				"is_ranking": true
 			},
@@ -264,6 +284,7 @@
 					"location": "Białystok",
 					"url": "https://tabletop.to/4-turniej-mistrzostw-polski-kings-of-war-2021biaostocki-debiut"
 				},
+				"rank": 5,
 				"points": 26,
 				"is_ranking": true
 			}
@@ -283,6 +304,7 @@
 					"location": "Warszawa",
 					"url": "https://tabletop.to/1-turniej-ligi-kings-of-war-2021-warszawa"
 				},
+				"rank": 11,
 				"points": 20,
 				"is_ranking": true
 			},
@@ -293,6 +315,7 @@
 					"location": "Warszawa",
 					"url": "https://tabletop.to/iii-turniej-ligi-kings-of-war-polska-2021"
 				},
+				"rank": 3,
 				"points": 28,
 				"is_ranking": true
 			}
@@ -312,6 +335,7 @@
 					"location": "Warszawa",
 					"url": "https://tabletop.to/1-turniej-ligi-kings-of-war-2021-warszawa"
 				},
+				"rank": 12,
 				"points": 19,
 				"is_ranking": false
 			},
@@ -322,6 +346,7 @@
 					"location": "Inny Wymiar w Katowicach",
 					"url": "https://tabletop.to/ii-turniej-cyklu-mistrzostw-polski-kings-of-war-2021"
 				},
+				"rank": 6,
 				"points": 25,
 				"is_ranking": true
 			},
@@ -332,6 +357,7 @@
 					"location": "Warszawa",
 					"url": "https://tabletop.to/iii-turniej-ligi-kings-of-war-polska-2021"
 				},
+				"rank": 10,
 				"points": 21,
 				"is_ranking": true
 			},
@@ -342,6 +368,7 @@
 					"location": "Białystok",
 					"url": "https://tabletop.to/4-turniej-mistrzostw-polski-kings-of-war-2021biaostocki-debiut"
 				},
+				"rank": 10,
 				"points": 21,
 				"is_ranking": false
 			}
@@ -349,35 +376,6 @@
 		"points": 46,
 		"points_total": 86,
 		"rank": 9
-	},
-	{
-		"player": "Kacper \"Alien\" Szczytowski",
-		"id": "kacper-alien-szczytowski",
-		"results": [
-			{
-				"tournament": {
-					"name": "III turniej Ligi Kings of War Polska 2021",
-					"date": "2021-04-18T00:00:00Z",
-					"location": "Warszawa",
-					"url": "https://tabletop.to/iii-turniej-ligi-kings-of-war-polska-2021"
-				},
-				"points": 23,
-				"is_ranking": true
-			},
-			{
-				"tournament": {
-					"name": "4 Turniej Mistrzostw Polski Kings of War 2021-BIAŁOSTOCKI DEBIUT",
-					"date": "2021-09-18T00:00:00Z",
-					"location": "Białystok",
-					"url": "https://tabletop.to/4-turniej-mistrzostw-polski-kings-of-war-2021biaostocki-debiut"
-				},
-				"points": 23,
-				"is_ranking": true
-			}
-		],
-		"points": 46,
-		"points_total": 46,
-		"rank": 10
 	},
 	{
 		"player": "Stanisław \"Lajon\" Urbaniak",
@@ -390,6 +388,7 @@
 					"location": "Warszawa",
 					"url": "https://tabletop.to/1-turniej-ligi-kings-of-war-2021-warszawa"
 				},
+				"rank": 9,
 				"points": 22,
 				"is_ranking": true
 			},
@@ -400,13 +399,45 @@
 					"location": "Warszawa",
 					"url": "https://tabletop.to/iii-turniej-ligi-kings-of-war-polska-2021"
 				},
+				"rank": 7,
 				"points": 24,
 				"is_ranking": true
 			}
 		],
 		"points": 46,
 		"points_total": 46,
-		"rank": 11
+		"rank": 10
+	},
+	{
+		"player": "Kacper \"Alien\" Szczytowski",
+		"id": "kacper-alien-szczytowski",
+		"results": [
+			{
+				"tournament": {
+					"name": "III turniej Ligi Kings of War Polska 2021",
+					"date": "2021-04-18T00:00:00Z",
+					"location": "Warszawa",
+					"url": "https://tabletop.to/iii-turniej-ligi-kings-of-war-polska-2021"
+				},
+				"rank": 8,
+				"points": 23,
+				"is_ranking": true
+			},
+			{
+				"tournament": {
+					"name": "4 Turniej Mistrzostw Polski Kings of War 2021-BIAŁOSTOCKI DEBIUT",
+					"date": "2021-09-18T00:00:00Z",
+					"location": "Białystok",
+					"url": "https://tabletop.to/4-turniej-mistrzostw-polski-kings-of-war-2021biaostocki-debiut"
+				},
+				"rank": 8,
+				"points": 23,
+				"is_ranking": true
+			}
+		],
+		"points": 46,
+		"points_total": 46,
+		"rank": 10
 	},
 	{
 		"player": "Damian \"Fakapu\" Fiedoruk",
@@ -419,6 +450,7 @@
 					"location": "Warszawa",
 					"url": "https://tabletop.to/1-turniej-ligi-kings-of-war-2021-warszawa"
 				},
+				"rank": 10,
 				"points": 21,
 				"is_ranking": true
 			},
@@ -429,13 +461,14 @@
 					"location": "Białystok",
 					"url": "https://tabletop.to/4-turniej-mistrzostw-polski-kings-of-war-2021biaostocki-debiut"
 				},
+				"rank": 7,
 				"points": 24,
 				"is_ranking": true
 			}
 		],
 		"points": 45,
 		"points_total": 45,
-		"rank": 12
+		"rank": 11
 	},
 	{
 		"player": "Kacper Rasiński",
@@ -448,6 +481,7 @@
 					"location": "Warszawa",
 					"url": "https://tabletop.to/1-turniej-ligi-kings-of-war-2021-warszawa"
 				},
+				"rank": 13,
 				"points": 18,
 				"is_ranking": true
 			},
@@ -458,13 +492,14 @@
 					"location": "Białystok",
 					"url": "https://tabletop.to/4-turniej-mistrzostw-polski-kings-of-war-2021biaostocki-debiut"
 				},
+				"rank": 9,
 				"points": 22,
 				"is_ranking": true
 			}
 		],
 		"points": 40,
 		"points_total": 40,
-		"rank": 13
+		"rank": 12
 	},
 	{
 		"player": "Paweł Pawluczuk",
@@ -477,13 +512,14 @@
 					"location": "Warszawa",
 					"url": "https://tabletop.to/1-turniej-ligi-kings-of-war-2021-warszawa"
 				},
+				"rank": 3,
 				"points": 28,
 				"is_ranking": true
 			}
 		],
 		"points": 28,
 		"points_total": 28,
-		"rank": 14
+		"rank": 13
 	},
 	{
 		"player": "Rafal 'Troll' Maj",
@@ -496,13 +532,14 @@
 					"location": "Inny Wymiar w Katowicach",
 					"url": "https://tabletop.to/ii-turniej-cyklu-mistrzostw-polski-kings-of-war-2021"
 				},
+				"rank": 5,
 				"points": 26,
 				"is_ranking": true
 			}
 		],
 		"points": 26,
 		"points_total": 26,
-		"rank": 15
+		"rank": 14
 	},
 	{
 		"player": "Rafał\"StrongestAvenger\" Świerkot",
@@ -515,13 +552,14 @@
 					"location": "Białystok",
 					"url": "https://tabletop.to/4-turniej-mistrzostw-polski-kings-of-war-2021biaostocki-debiut"
 				},
+				"rank": 6,
 				"points": 25,
 				"is_ranking": true
 			}
 		],
 		"points": 25,
 		"points_total": 25,
-		"rank": 16
+		"rank": 15
 	},
 	{
 		"player": "Grzegorz Gregx",
@@ -534,13 +572,14 @@
 					"location": "Inny Wymiar w Katowicach",
 					"url": "https://tabletop.to/ii-turniej-cyklu-mistrzostw-polski-kings-of-war-2021"
 				},
+				"rank": 7,
 				"points": 24,
 				"is_ranking": true
 			}
 		],
 		"points": 24,
 		"points_total": 24,
-		"rank": 17
+		"rank": 16
 	},
 	{
 		"player": "Adam \"Athard\" Cychner",
@@ -553,13 +592,14 @@
 					"location": "Warszawa",
 					"url": "https://tabletop.to/1-turniej-ligi-kings-of-war-2021-warszawa"
 				},
+				"rank": 7,
 				"points": 24,
 				"is_ranking": true
 			}
 		],
 		"points": 24,
 		"points_total": 24,
-		"rank": 18
+		"rank": 16
 	},
 	{
 		"player": "Nieumarły Pla(nk)ton",
@@ -572,12 +612,13 @@
 					"location": "Warszawa",
 					"url": "https://tabletop.to/1-turniej-ligi-kings-of-war-2021-warszawa"
 				},
+				"rank": 14,
 				"points": 17,
 				"is_ranking": true
 			}
 		],
 		"points": 17,
 		"points_total": 17,
-		"rank": 19
+		"rank": 17
 	}
 ]

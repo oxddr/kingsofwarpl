@@ -9,6 +9,7 @@ require (
 )
 
 require (
+	bitbucket.org/creachadair/stringset v0.0.10 // indirect
 	github.com/andybalholm/cascadia v1.3.1 // indirect
 	go.uber.org/atomic v1.7.0 // indirect
 	golang.org/x/net v0.0.0-20210916014120-12bc252f5db8 // indirect

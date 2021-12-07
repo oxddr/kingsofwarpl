@@ -1,0 +1,30 @@
+[
+	{
+		"name": "1 turniej ligi Kings of war 2021 [Warszawa]",
+		"date": "2021-01-24T00:00:00Z",
+		"location": "Warszawa",
+		"url": "https://tabletop.to/1-turniej-ligi-kings-of-war-2021-warszawa",
+		"no_players": 14
+	},
+	{
+		"name": "II turniej cyklu MISTRZOSTW POLSKI Kings of War, 2021",
+		"date": "2021-02-27T00:00:00Z",
+		"location": "Inny Wymiar w Katowicach",
+		"url": "https://tabletop.to/ii-turniej-cyklu-mistrzostw-polski-kings-of-war-2021",
+		"no_players": 7
+	},
+	{
+		"name": "III turniej Ligi Kings of War Polska 2021",
+		"date": "2021-04-18T00:00:00Z",
+		"location": "Warszawa",
+		"url": "https://tabletop.to/iii-turniej-ligi-kings-of-war-polska-2021",
+		"no_players": 10
+	},
+	{
+		"name": "4 Turniej Mistrzostw Polski Kings of War 2021-BIAŁOSTOCKI DEBIUT",
+		"date": "2021-09-18T00:00:00Z",
+		"location": "Białystok",
+		"url": "https://tabletop.to/4-turniej-mistrzostw-polski-kings-of-war-2021biaostocki-debiut",
+		"no_players": 10
+	}
+]

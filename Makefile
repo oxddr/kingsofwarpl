@@ -1,6 +1,13 @@
 tttscraper_bin = tools/cmd/tttscraper/tttscraper
 players_bin = tools/cmd/players/players
 ranking_bin = tools/cmd/ranking/ranking
+statistics_bin = tools/cmd/statistics/statistics
+
+season2021_data = data/season2021/raw/20210918_Bialystok.json \
+		data/season2021/raw/20210124_Warszawa.json \
+		data/season2021/raw/20210227_Katowice.json \
+		data/season2021/raw/20210418_Warszawa.json
+
 
 data/season2021/raw/20210918_Bialystok.json: $(tttscraper_bin)
 	./$(tttscraper_bin) --result_url https://tabletop.to/4-turniej-mistrzostw-polski-kings-of-war-2021biaostocki-debiut --output $@
@@ -14,12 +21,14 @@ data/season2021/raw/20210227_Katowice.json: $(tttscraper_bin)
 data/season2021/raw/20210418_Warszawa.json: $(tttscraper_bin)
 	./$(tttscraper_bin) --result_url https://tabletop.to/iii-turniej-ligi-kings-of-war-polska-2021 --output $@
 
-data/season2021/ranking.json: $(ranking_bin) \
-data/season2021/raw/20210918_Bialystok.json \
-data/season2021/raw/20210124_Warszawa.json \
-data/season2021/raw/20210227_Katowice.json \
-data/season2021/raw/20210418_Warszawa.json
+data/season2021/ranking.json: $(ranking_bin) $(season2021_data)
 	./$(ranking_bin) --output $@ --results_dir data/season2021/raw
+
+data/season2021/factions.json: $(statistics_bin) $(season2021_data)
+	./$(statistics_bin) --mode factions --results_dir data/season2021/raw --output $@
+
+data/season2021/tournaments.json: $(statistics_bin) $(season2021_data)
+	./$(statistics_bin) --mode tournaments --results_dir data/season2021/raw --output $@
 
 .PHONY: player_pages
 player_pages: data/season2021/ranking.json players
@@ -33,3 +42,6 @@ $(players_bin): tools/cmd/players/main.go
 
 $(tttscraper_bin): tools/cmd/tttscraper/main.go
 	cd tools/cmd/tttscraper && go build .
+
+$(statistics_bin): tools/cmd/statistics/main.go
+	cd tools/cmd/statistics/ && go build .

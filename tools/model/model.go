@@ -3,8 +3,11 @@ package model
 import (
 	"encoding/json"
 	"fmt"
+	"io/fs"
 	"io/ioutil"
 	"log"
+	"path/filepath"
+	"strings"
 	"time"
 )
 
@@ -34,8 +37,20 @@ type League struct {
 	Tournaments []*TournamentResults
 }
 
-func LeagueFromJSON(files []string) (*League, error) {
+func LeagueFromJSON(dir string) (*League, error) {
 	l := &League{}
+
+	var files []string
+	err := filepath.Walk(dir, func(path string, info fs.FileInfo, err error) error {
+		if strings.HasSuffix(path, ".json") {
+			files = append(files, path)
+		}
+		return nil
+	})
+	if err != nil {
+		return nil, fmt.Errorf("unable to list json files in %s: %v", dir, err)
+	}
+
 	for _, f := range files {
 		bytes, err := ioutil.ReadFile(f)
 		if err != nil {
@@ -64,6 +79,7 @@ type RankedPlayer struct {
 
 type Result struct {
 	Tournament *Tournament `json:"tournament"`
+	Rank       int         `json:"rank"`
 	Points     int         `json:"points"`
 	Ranking    bool        `json:"is_ranking"`
 }

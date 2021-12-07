@@ -3,12 +3,9 @@ package main
 import (
 	"encoding/json"
 	"flag"
-	"io/fs"
 	"io/ioutil"
 	"log"
-	"path/filepath"
 	"sort"
-	"strings"
 
 	"github.com/oxddr/kingsofwarpl/tools/model"
 )
@@ -17,17 +14,6 @@ var (
 	resultsDir = flag.String("results_dir", "", "")
 	output     = flag.String("output", "", "")
 )
-
-func ListAll(dir string) ([]string, error) {
-	var files []string
-	err := filepath.Walk(dir, func(path string, info fs.FileInfo, err error) error {
-		if strings.HasSuffix(path, ".json") {
-			files = append(files, path)
-		}
-		return nil
-	})
-	return files, err
-}
 
 func Rank2021(l *model.League) []*model.RankedPlayer {
 	nameToPlayer := map[string]*model.RankedPlayer{}
@@ -54,6 +40,7 @@ func Rank2021(l *model.League) []*model.RankedPlayer {
 			rankedPlayer.Results = append(rankedPlayer.Results, &model.Result{
 				Tournament: t.Tournament,
 				Points:     newPts,
+				Rank:       p.Rank,
 			})
 			nameToPlayer[p.Name] = rankedPlayer
 		}
@@ -92,8 +79,13 @@ func Rank2021(l *model.League) []*model.RankedPlayer {
 		return players[i].Points > players[j].Points
 	})
 
-	for i, r := range players {
-		r.Rank = i + 1
+	players[0].Rank = 1
+	for i := 1; i < len(players); i++ {
+		if players[i].Points == players[i-1].Points && players[i].PointsTotal == players[i-1].PointsTotal {
+			players[i].Rank = players[i-1].Rank
+		} else {
+			players[i].Rank = players[i-1].Rank + 1
+		}
 	}
 
 	return players
@@ -102,12 +94,7 @@ func Rank2021(l *model.League) []*model.RankedPlayer {
 func main() {
 	flag.Parse()
 
-	files, err := ListAll(*resultsDir)
-	if err != nil {
-		log.Fatalf("Unable to list files from %q: %v", *resultsDir, err)
-	}
-
-	league, err := model.LeagueFromJSON(files)
+	league, err := model.LeagueFromJSON(*resultsDir)
 	if err != nil {
 		log.Fatalf("Unable to build League from files: %v", err)
 	}
@@ -122,5 +109,4 @@ func main() {
 	if err != nil {
 		log.Fatalf("Unable to write ranking to file %q: %v", *output, err)
 	}
-
 }

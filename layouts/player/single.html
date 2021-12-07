@@ -38,6 +38,7 @@
                 <tr>
                   <td>Data</td>
                   <td>Turniej</td>
+                  <td>Miejsce</td>
                   <td>Punkty</td>
                 </tr>
               </thead>
@@ -46,6 +47,7 @@
                 <tr class="{{ if .is_ranking }}success{{ end }}">
                   <td>{{ time.Format "2006-01-02" .tournament.date }}</td>
                   <td><a href="{{ .tournament.url }}">{{ .tournament.name }}</a></td>
+                  <td>{{ .rank }}</td>
                   <td>{{ .points }}</td>
                 </tr>
                 {{ end }}
