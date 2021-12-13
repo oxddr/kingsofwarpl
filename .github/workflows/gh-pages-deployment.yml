@@ -39,3 +39,4 @@ jobs:
         server-dir: public_html/
         protocol: ftps
         dry-run: true
+        log-level: verbose
