@@ -29,20 +29,31 @@ jobs:
     #     PUBLISH_BRANCH: gh-pages
     #     PUBLISH_DIR: ./public
 
-    - name: Deploy to SFTP
-      # uses: SamKirkland/FTP-Deploy-Action@4.2.0
-      # with:
-      #   server: ${{ secrets.FTP_HOSTNAME }}
-      #   username: ${{ secrets.FTP_USERNAME }}
-      #   password: ${{ secrets.FTP_PASSWORD }}
-      #   local-dir: ./public/
-      #   server-dir: public_html/
-      #   protocol: ftps
-      #   log-level: verbose
-      uses: kevinpainchaud/simple-ftp-deploy-action@v1.2.1
+    # - name: Deploy to SFTP
+    #   uses: SamKirkland/FTP-Deploy-Action@4.2.0
+    #   with:
+    #     server: ${{ secrets.FTP_HOSTNAME }}
+    #     username: ${{ secrets.FTP_USERNAME }}
+    #     password: ${{ secrets.FTP_PASSWORD }}
+    #     local-dir: ./public/
+    #     server-dir: public_html/
+    #     protocol: ftps
+    #     log-level: verbose
+
+    # - name: Deploy to SFTP
+    #   uses: kevinpainchaud/simple-ftp-deploy-action@v1.2.1
+    #   with:
+    #     ftp_host: ${{ secrets.FTP_HOSTNAME }}
+    #     ftp_username: ${{ secrets.FTP_USERNAME }}
+    #     ftp_password: ${{ secrets.FTP_PASSWORD }}
+    #     local_source_dir: "public"
+    #     dist_target_dir: "public_html"
+
+    - name: Deploy to FTP
+      uses: sebastianpopp/ftp-action@releases/v2
       with:
-        ftp_host: ${{ secrets.FTP_HOSTNAME }}
-        ftp_username: ${{ secrets.FTP_USERNAME }}
-        ftp_password: ${{ secrets.FTP_PASSWORD }}
-        local_source_dir: "public"
-        dist_target_dir: "public_html"
+        host: ${{ secrets.FTP_SERVER }}
+        user: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        localDir: "public"
+        remoteDir: "public_html"
