@@ -30,12 +30,19 @@ jobs:
     #     PUBLISH_DIR: ./public
 
     - name: Deploy to SFTP
-      uses: SamKirkland/FTP-Deploy-Action@4.2.0
+      # uses: SamKirkland/FTP-Deploy-Action@4.2.0
+      # with:
+      #   server: ${{ secrets.FTP_HOSTNAME }}
+      #   username: ${{ secrets.FTP_USERNAME }}
+      #   password: ${{ secrets.FTP_PASSWORD }}
+      #   local-dir: ./public/
+      #   server-dir: public_html/
+      #   protocol: ftps
+      #   log-level: verbose
+      uses: kevinpainchaud/simple-ftp-deploy-action@v1.2.1
       with:
-        server: ${{ secrets.FTP_HOSTNAME }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./public/
-        server-dir: public_html/
-        protocol: ftps
-        log-level: verbose
+        ftp_host: ${{ secrets.FTP_HOSTNAME }}
+        ftp_username: ${{ secrets.FTP_USERNAME }}
+        ftp_password: ${{ secrets.FTP_PASSWORD }}
+        local_source_dir: "public"
+        dist_target_dir: "public_html"
