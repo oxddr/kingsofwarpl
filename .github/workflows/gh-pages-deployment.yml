@@ -32,8 +32,8 @@ jobs:
     - name: Deploy to SFTP
       uses: SamKirkland/FTP-Deploy-Action@4.2.0
       with:
-        server: s8.linuxpl.com
-        username: ddr@kingsofwar.pl
+        server: ${{ secrets.FTP_HOSTNAME }}
+        username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./public/
         server-dir: public_html/
