@@ -10,7 +10,6 @@ theme = ["hugo-initio"]
   site_logo = "/images/logo.png"
   avatar = "/images/logo2.png"
   avatarclass = "square22"
-  description = 'Strona polskiej społeczności gry Kings of War'
   DateForm = "2006-01-02"
 
 [menu]
@@ -18,37 +17,6 @@ theme = ["hugo-initio"]
     name = '🏠'
     weight = -110
   [[menu.main]]
-    name = "O grze"
-    url = "about"
-    weight = 5
-  [[menu.main]]
-    name = 'Jak zacząć?'
-    weight = 10
-    url = "getting_started"
-  [[menu.main]]
-    name = "Jak nas znaleźć?"
-    weight = 20
-    url = "community"
-  [[menu.main]]
-    name = "Wydarzenia"
-    url = "events"
-    weight = 30
-  [[menu.main]]
     identifier = "liga"
     name = "Liga"
     weight = 40
-  [[menu.main]]
-    name = "O lidze"
-    url = "league"
-    weight = 5
-    parent = "liga"
-  [[menu.main]]
-    name = "Regulamin 2021"
-    url = "bylaw"
-    parent = "liga"
-    weight = 10
-  [[menu.main]]
-    name = "Ranking 2021"
-    url = "ranking"
-    parent = "liga"
-    weight = 20

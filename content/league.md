@@ -1,5 +1,10 @@
 ---
 title: O lidze
+draft: true
+menu:
+  main:
+    weight: 5
+    parent: "liga"
 ---
 
 Lorem ipsum dolor sit amet, *consectetur* adipisicing elit, sed do eiusmod

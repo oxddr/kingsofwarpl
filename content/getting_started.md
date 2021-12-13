@@ -1,5 +1,9 @@
 ---
-title: Jak zacząć
+title: Jak zacząć?
+draft: true
+menu:
+  main:
+    weight: 10
 ---
 Lorem ipsum dolor sit amet, *consectetur* adipisicing elit, sed do eiusmod
 tempor incididunt ut **labore et dolore magna aliqua**. Ut enim ad minim veniam,

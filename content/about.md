@@ -1,5 +1,9 @@
 ---
 title: O grze
+draft: true
+menu:
+  main:
+    weight: 5
 ---
 
 Lorem ipsum dolor sit amet, *consectetur* adipisicing elit, sed do eiusmod

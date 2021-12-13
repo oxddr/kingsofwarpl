@@ -1,6 +1,8 @@
 ---
 title: Jak nas znaleźć?
-
+menu:
+  main:
+    weight: 30
 ---
 Polskie środowisko graczy _Kings of War_ jest zgromadzone wokół grupy [Kings of War Polska](https://www.facebook.com/groups/kowpl/?multi_permalinks=2813396378956040&notif_id=1638813248281271&notif_t=feedback_reaction_generic&ref=notif) na Facebooku. To nasze główne miejsce do komunikacji, dyskusji i dzielenia się efektami prac modelarskich. Jeśli interesuje Cię wejście w _Kings of War_, masz pytania dot. zasad, szukasz graczy czy chcesz pokazać swój nowo pomalowany oddział - to miejsce dla Ciebie. Wszyscy są mile widziani.
 
