@@ -37,6 +37,5 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./public/
         server-dir: public_html/
-        protocol: ftp
-        dry-run: true
+        protocol: ftps
         log-level: verbose
