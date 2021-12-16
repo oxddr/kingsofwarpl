@@ -7,10 +7,11 @@ theme = ["hugo-initio"]
 
 [params]
   banner = "/images/kowbattle.jpeg"
-  site_logo = "/images/logo.png"
-  avatar = "/images/logo2.png"
   avatarclass = "square22"
   DateForm = "2006-01-02"
+
+  name = "Kings of War Polska"
+  description = "Strona polskiej społeczności Kings of War"
 
 [menu]
   [[menu.main]]
