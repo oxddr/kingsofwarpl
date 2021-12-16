@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en{{ end }}">
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+  	<meta name="description" content="">
+  	<meta name="author"      content="{{ .Site.Author }}">
+
+    {{ partial "head/head.html" . }}
+  </head>
+
+  <body class="home">
+
+    {{ block "header" . }}
+    {{ partial "head/header.html" . }}
+    {{ end }}
+
+    <main id="main">
+      <div class="container">
+        <div class="row topspace">
+          <div class="col-sm-8 col-sm-offset-2">
+ 	    <article class="post">
+	      <header class="entry-header">
+                {{ block "title" . }}
+                {{ end }}
+	      </header>
+	      <div class="entry-content">
+                {{ block "content" . }}
+                {{ end }}
+	      </div>
+	    </article><!-- #post-## -->
+          </div>
+        </div> <!-- /row post  -->
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+	    <div id="share">
+	      {{ if .Params.Share }}
+	      {{ partial "sharethis.html" . }}
+	      {{ end }}
+	    </div>
+          </div>
+        </div> <!-- /row share -->
+        <div class="clearfix"></div>
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+	    <div id="comments">
+	      {{ if .Params.Comments }}
+	      {{ partial "disqus.html" . }}
+	      {{ end }}
+	    </div>
+          </div>
+        </div> <!-- /row comments -->
+        <div class="clearfix"></div>
+      </div>	<!-- /container -->
+    </main>
+
+    {{ block "footer" . }}
+    {{ partial "footer/footer.html" . }}
+    {{ end }}
+  </body>
+
+</html>

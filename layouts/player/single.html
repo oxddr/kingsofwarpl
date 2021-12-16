@@ -1,65 +1,56 @@
-{{ define "main" }}
-<main id="main">
-  <div class="container">
-    <div class="row topspace">
-      <div class="col-sm-8 col-sm-offset-2">
-        <header class="entry-header">
- 	  <h1 class="entry-title">
-            <a href="{{ .Permalink }}" rel="bookmark">
-              {{ .Title }}
-            </a>
-          </h1>
-	</header>
-	<div class="entry-content">
-          {{ $currentPlayer := .Params.Player }}
-          {{ range $.Site.Data.season2021.ranking }}
-          {{ if eq .id $currentPlayer }}
+{{ define "title" }}
+<h1 class="entry-title">
+  <a href="{{ .Permalink }}" rel="bookmark">
+    {{ .Title }}
+  </a>
+</h1>
+{{ end }}
 
-          <div class="text-center">
-            <a href="https://tabletop.to/profile/{{ .id }}">
-              Profil tabletop.to <span class="glyphicon glyphicon-new-window"></span>
-            </a>
-          </div>
+{{ define "content" }}
+{{ $currentPlayer := .Params.Player }}
+{{ range $.Site.Data.season2021.ranking }}
+{{ if eq .id $currentPlayer }}
 
-          <div class="panel panel-default">
-            <div class="panel-heading">Liga 2021</div>
+<div class="text-center">
+  <a href="https://tabletop.to/profile/{{ .id }}">
+    Profil tabletop.to <span class="glyphicon glyphicon-new-window"></span>
+  </a>
+</div>
 
-            <div class="panel-body">
-              <dl class="dl-horizontal">
-                <dt>Miejsce:</dt>
-                <dd>{{ .rank }}</dd>
-                <dt>Punkty:</dt>
-                <dd>{{ .points }} / {{ .points_total }}</dd>
-              </dl>
-            </div>
+<h2>Wyniki</h2>
 
-            <table class="table table-hover">
-              <thead>
-                <tr>
-                  <td>Data</td>
-                  <td>Turniej</td>
-                  <td>Miejsce</td>
-                  <td>Punkty</td>
-                </tr>
-              </thead>
-              <tbody>
-                {{ range .results }}
-                <tr class="{{ if .is_ranking }}success{{ end }}">
-                  <td>{{ time.Format "2006-01-02" .tournament.date }}</td>
-                  <td><a href="{{ .tournament.url }}">{{ .tournament.name }}</a></td>
-                  <td>{{ .rank }}</td>
-                  <td>{{ .points }}</td>
-                </tr>
-                {{ end }}
-              </tbody>
-            </table>
-          </div>
-          {{ end }}
-          {{ end }}
-	</div>
-      </div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <div class="pull-left">
+      Liga 2021
+    </div>
+    <div class="pull-right">
+        Miejsce: <strong>{{ .rank }}</strong> | Punkty: <strong>{{ .points }}</strong> / {{ .points_total }}
     </div>
     <div class="clearfix"></div>
   </div>
-</main>
+
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <td style="width: 15%">Data</td>
+        <td>Turniej</td>
+        <td>Miejsce</td>
+        <td>Punkty</td>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range .results }}
+      <tr class="{{ if .is_ranking }}success{{ end }}">
+        <td>{{ time.Format "2006-01-02" .tournament.date }}</td>
+        <td><a href="{{ .tournament.url }}">{{ .tournament.name }}</a></td>
+        <td>{{ .rank }}</td>
+        <td>{{ .points }}</td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</div>
+{{ end }}
+{{ end }}
 {{ end }}
