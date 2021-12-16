@@ -1,8 +1,7 @@
 ---
 title: Wydarzenia
+type: events
 menu:
   main:
     weight: 30
 ---
-
-Tu pojawią się nadchodzące wydarzenia.

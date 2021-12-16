@@ -1,0 +1,44 @@
+{{ define "title" }}
+<h1 class="entry-title">
+  <a href="{{ .Permalink }}" rel="bookmark">
+    {{ .Title }}
+  </a>
+</h1>
+{{ end }}
+
+{{ define "content" }}
+<div class="list-group">
+  {{ range sort $.Site.Data.events "date" "asc" }}
+  <div class="list-group-item">
+    <h5 class="list-group-item-heading">{{ .name }}</h5>
+    <br>
+    <p class="list-group-item-text">
+      <span class="glyphicon glyphicon-calendar"></span>
+      {{ time.Format "02.01.2006" .date }}
+    </p>
+    <a class="list-group-item-text"
+       href="https://www.google.com/maps/search/?api=1&query={{ .place_details }}"
+       target="_blank" rel="noopener noreferrer">
+      <span class="glyphicon glyphicon-map-marker"></span>
+      {{ .place_details }}
+    </a>
+    <p class="list-group-item-text">
+      <span class="glyphicon glyphicon-th"></span>
+      {{ .format }}
+    </p>
+    <p class="list-group-item-text">
+      <a href="{{ .event_url }}">
+        <span class="glyphicon glyphicon-info-sign"></span>
+        Strona wydarzenia
+      </a>
+    </p>
+    <p class="list-group-item-text">
+      <a href="{{ .signup_url }}">
+        <span class="glyphicon glyphicon-pencil"></span>
+        Zapisy
+      </a>
+    </p>
+  </div>
+  {{ end }}
+</div>
+{{ end }}
