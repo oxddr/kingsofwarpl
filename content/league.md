@@ -1,69 +1,31 @@
 ---
 title: O lidze
-draft: true
 menu:
   main:
     weight: 5
-    parent: "liga"
----
-
-Lorem ipsum dolor sit amet, *consectetur* adipisicing elit, sed do eiusmod
-tempor incididunt ut **labore et dolore magna aliqua**. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. ***Duis aute irure dolor*** in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. ~~Excepteur sint occaecat~~ cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-## H2
-
-Lorem ipsum dolor sit amet, *consectetur* adipisicing elit, sed do eiusmod
-tempor incididunt ut **labore et dolore magna aliqua**. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat.
+    parent: liga
 
 ---
+Liga Kings of War (wcześniej _Mistrzostwa Polski Kings of War_) to cykl turniejów mający na celu wyłonienie najlepszego gracza w danym sezonie oraz promocję gry _Kings of War_.
 
-***Duis aute irure dolor*** in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. ~~Excepteur sint occaecat~~ cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Sezon zaczyna się zazwyczaj w styczniu, a kończy w grudniu. W ciągu niego rozgrywane jest kilka turniejów (zazwyczaj jeden w miesiącu) w różnych miastach w Polsce. Zazwyczaj są to imprezy jednodniowe, w ciągu których rozgrywanych są 3 bitwy. W zależności od zajętego miejsca, gracz dostaje odpowiednią liczbę punktów do [rankingu generalnego]({{< relref "ranking" >}}). 
 
-### H3
+Nad prowadzenie Ligi czuwa grupa organizatorów - tj. osób organizujących poszczególne turnieje lub w inny sposób wspierających jej organizację.
 
-unordered list:
+Szczegółowe kwestia organizacji Ligi (np. przeprowadzenia turniejów czy prowadzenia rankingu) określa [Regulamin Ligi]({{< relref "bylaw" >}}). 
 
-* item-1
-  * sub-item-1
-  * sub-item-2
-- item-2
-  - sub-item-3
-  - sub-item-4
-+ item-3
-  + sub-item-5
-  + sub-item-6
+## Nowi gracze
 
+Liga jest otwarta na wszystkich nowych graczy. Pomimo oczywistego aspektu rywalizacji, ligowe turnieje są dobrą okazją do poznania i nauczenia się gry. Dlatego bez względu na to czy na bitewniakach zjadłeś zęby czy stawiasz pierwsze kroki  zapraszamy do udziału.
 
-ordered list:
+## Grupa organizatorów
 
-1. item-1
-   1. sub-item-1
-   2. sub-item-2
-2. item-2
-   1. sub-item-3
-   2. sub-item-4
-3. item-3
+* ddr
+* Gregx
+* Makras
+* Misio
+* UFO
 
-#### Header4
+## Chcę zorganizować turniej ligowy
 
-Table Header-1 | Table Header-2 | Table Header-3
-:--- | :---: | ---:
-Table Data-1 | Table Data-2 | Table Data-3
-TD-4 | Td-5 | TD-6
-Table Data-7 | Table Data-8 | Table Data-9
-
-##### Header5
-
-You may also want some images right in here like ![GitHub Logo](https://cloud.githubusercontent.com/assets/5456665/13322882/e74f6626-dc00-11e5-921d-f6d024a01eaa.png "GitHub") - you can do that but I would recommend you to use the component "image" and simply split your text.
-
-###### Header6
-
-Let us do some links - this for example: https://github.com/MinhasKamal/github-markdown-syntax is **NOT** a link but this: is [GitHub](https://github.com/MinhasKamal/github-markdown-syntax)
+Każdy może zorganizować turniej ligowy. Jeśli chcesz to zrobić, zgłoś się do któregoś z organizatorów lub napisz na grupie [Kings of War Polska](https://www.facebook.com/groups/kowpl). 
