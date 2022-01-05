@@ -37,7 +37,7 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./public/
         server-dir: public_html/
-        protocol: ftps
+        protocol: ftp
         log-level: verbose
 
     # - name: Deploy to SFTP
