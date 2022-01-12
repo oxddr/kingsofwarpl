@@ -1,10 +1,6 @@
 ---
 title: Regulamin Ligi Kings of War 2021
-menu:
-  main:
-    name: "Regulamin 2021"
-    parent: "liga"
-    weight: 10
+type: page
 ---
 _Data aktualizacji: 8 grudnia 2020_
 
