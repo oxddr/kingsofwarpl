@@ -9,7 +9,7 @@ menu:
     weight: 3
 
 ---
-_Data aktualizacji: 12 styczeń 2022_
+_Data aktualizacji: 19 styczeń 2022_
 
 1. Cel
    1. Celem organizacji Ligi Kings of War (dalej “liga”), jest promowanie gry bitewnej Kings of War poprzez organizacje jak największej liczby turniejów.
