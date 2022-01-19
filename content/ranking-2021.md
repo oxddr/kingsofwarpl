@@ -1,6 +1,7 @@
 ---
 title: Ranking Ligi 2021
-type: rankxing
+type: ranking
 aliases:
-- /ranking
+- "/ranking"
+
 ---
