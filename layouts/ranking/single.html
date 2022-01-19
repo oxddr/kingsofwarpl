@@ -7,7 +7,10 @@
 {{ end }}
 
 {{ define "content" }}
-<div class="text-center">Liczba graczy: {{ len $.Site.Data.season2021.ranking }}</div>
+{{ $season := printf "liga%d" .Params.season }}
+{{ $seasonData := index $.Site.Data $season }}
+
+<div class="text-center">Liczba graczy: {{ len $seasonData.ranking }}</div>
 <table class="table table-hover">
   <thead>
     <tr>
@@ -17,7 +20,7 @@
     </tr>
   </thead>
   <tbody>
-    {{ range $.Site.Data.season2021.ranking }}
+    {{ range $seasonData.ranking }}
     <tr>
       <td>{{ .rank }}</td>
       <td>
@@ -39,7 +42,7 @@
     </tr>
   </thead>
   <tbody>
-    {{ range $.Site.Data.season2021.tournaments }}
+    {{ range $seasonData.tournaments }}
     <tr>
       <td>{{ time.Format "2006-01-02" .date }}</td>
       <td><a href="{{ .url }}">{{ .name }}</a></td>
@@ -59,7 +62,7 @@
     </tr>
   </thead>
   <tbody>
-    {{ range $.Site.Data.season2021.factions }}
+    {{ range $seasonData.factions }}
     <tr>
       <td>{{ .name }}</td>
       <td>{{ .no_players }}</td>
