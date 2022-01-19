@@ -3,6 +3,9 @@ players_bin = tools/cmd/players/players
 ranking_bin = tools/cmd/ranking/ranking
 statistics_bin = tools/cmd/statistics/statistics
 
+data/events.json:
+	curl -L "https://docs.google.com/spreadsheets/d/e/2PACX-1vQDorbeJ3svVWrbYYvtCNBOLif-mCCtjz45ndjxUtF0Ec_o77D20E5ejQtPcvM-YguvU1wH6BTxCaoC/pub?gid=790449776&single=true&output=csv" |  mlr --csv sort -f date  | mlr --c2j --jlistwrap cat > $@
+
 season2021_data = data/season2021/raw/20210918_Bialystok.json \
 		data/season2021/raw/20210124_Warszawa.json \
 		data/season2021/raw/20210227_Katowice.json \
