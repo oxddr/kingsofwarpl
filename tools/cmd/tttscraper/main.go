@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"flag"
+	"fmt"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -17,8 +18,8 @@ import (
 )
 
 var (
-	resultURL = flag.String("result_url", "", "Link to the event page on tabletop.to")
-	output    = flag.String("output", "", "Path to output directory")
+	desc   = flag.String("description", "", "Path to file with league description")
+	output = flag.String("output", "", "Path to file with league data.")
 
 	idRegex = regexp.MustCompile("href=/profile/(.*)>Profile")
 )
@@ -98,55 +99,75 @@ func ExtractPlayers(doc *goquery.Document) ([]*model.Player, error) {
 	return players, mErr
 }
 
-func main() {
-	flag.Parse()
-
-	if *resultURL == "" {
-		log.Fatal("--result_url must be provided")
-	}
-
-	res, err := http.Get(*resultURL)
+func GetSingle(t *model.Tournament) (*model.TournamentResults, error) {
+	res, err := http.Get(t.URL)
 	if err != nil {
-		log.Fatalf("Unable to download %q: %v", *resultURL, err)
+		return nil, fmt.Errorf("unable to download %q: %v", t.URL, err)
 	}
 	defer res.Body.Close()
 	if res.StatusCode != 200 {
-		log.Fatalf("Status code error for %q: %d %s", *resultURL, res.StatusCode, res.Status)
+		return nil, fmt.Errorf("Status code error for %q: %d %s", t.URL, res.StatusCode, res.Status)
 	}
 
 	doc, err := goquery.NewDocumentFromReader(res.Body)
 	if err != nil {
-		log.Fatalf("Unable to initialize goquery: %v", err)
+		return nil, fmt.Errorf("Unable to initialize goquery: %v", err)
 	}
 
 	dt, err := ExtractDate(doc)
 	if err != nil {
-		log.Fatalf("Unable to extract tournament's date: %v", err)
+		return nil, fmt.Errorf("Unable to extract tournament's date: %v", err)
 	}
 
 	players, err := ExtractPlayers(doc)
 	if err != nil {
-		log.Fatalf("Unable to extract tournament's players: %v", err)
+		return nil, fmt.Errorf("Unable to extract tournament's players: %v", err)
 	}
 
-	t := &model.TournamentResults{
+	return &model.TournamentResults{
 		Tournament: &model.Tournament{
 			Name:     ExtractName(doc),
 			Date:     dt,
 			Location: ExtractLocation(doc),
-			URL:      *resultURL,
+			URL:      t.URL,
 		},
 		Players: players,
+	}, nil
+}
+
+func main() {
+	flag.Parse()
+
+	if *desc == "" {
+		log.Fatal("--league_description must be provided")
 	}
 
-	bytes, err := json.MarshalIndent(t, "", "\t")
+	bytes, err := ioutil.ReadFile(*desc)
 	if err != nil {
-		log.Fatalf("Unable to marshal tournament data: %v\n\n %v", err, t)
+		log.Fatalf("Unable to read file with league description (%q): %v", *desc, err)
+	}
+
+	tournaments := []*model.Tournament{}
+	if err := json.Unmarshal(bytes, &tournaments); err != nil {
+		log.Fatalf("Unable to unmarshal league description: %v", err)
+	}
+
+	results := []*model.TournamentResults{}
+	for _, t := range tournaments {
+		r, err := GetSingle(t)
+		if err != nil {
+			log.Fatalf("Unable to get data for tournament %q: %v", t.Name, err)
+		}
+		results = append(results, r)
+	}
+
+	bytes, err = json.MarshalIndent(results, "", "\t")
+	if err != nil {
+		log.Fatalf("Unable to marshal league data: %v\n\n %v", err, results)
 	}
 
 	err = ioutil.WriteFile(*output, bytes, 0644)
 	if err != nil {
 		log.Fatalf("Unable to save data to file %q: %v", *output, err)
 	}
-
 }

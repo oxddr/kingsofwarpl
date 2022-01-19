@@ -11,8 +11,8 @@ import (
 )
 
 var (
-	resultsDir = flag.String("results_dir", "", "")
-	output     = flag.String("output", "", "")
+	resultsFile = flag.String("results", "", "Path to file with results")
+	output      = flag.String("output", "", "")
 )
 
 func Rank2021(l *model.League) []*model.RankedPlayer {
@@ -94,7 +94,7 @@ func Rank2021(l *model.League) []*model.RankedPlayer {
 func main() {
 	flag.Parse()
 
-	league, err := model.LeagueFromJSON(*resultsDir)
+	league, err := model.LeagueFromJSON(*resultsFile)
 	if err != nil {
 		log.Fatalf("Unable to build League from files: %v", err)
 	}

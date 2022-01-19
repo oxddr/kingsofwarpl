@@ -20,7 +20,7 @@
 		"no_players": 2
 	},
 	{
-		"name": "Abyssal Dwarfs",
+		"name": "Night-stalkers",
 		"times_played": 2,
 		"no_players": 1
 	},
@@ -30,18 +30,28 @@
 		"no_players": 1
 	},
 	{
-		"name": "Elves",
-		"times_played": 2,
-		"no_players": 2
-	},
-	{
 		"name": "Ogres",
 		"times_played": 2,
 		"no_players": 1
 	},
 	{
-		"name": "Night-stalkers",
+		"name": "Abyssal Dwarfs",
 		"times_played": 2,
+		"no_players": 1
+	},
+	{
+		"name": "Elves",
+		"times_played": 2,
+		"no_players": 2
+	},
+	{
+		"name": "Goblins",
+		"times_played": 1,
+		"no_players": 1
+	},
+	{
+		"name": "The Trident Realm of Neritica",
+		"times_played": 1,
 		"no_players": 1
 	},
 	{
@@ -51,16 +61,6 @@
 	},
 	{
 		"name": "The League of Rhordia",
-		"times_played": 1,
-		"no_players": 1
-	},
-	{
-		"name": "Goblins",
-		"times_played": 1,
-		"no_players": 1
-	},
-	{
-		"name": "The Trident Realm of Neritica",
 		"times_played": 1,
 		"no_players": 1
 	}

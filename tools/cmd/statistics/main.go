@@ -18,9 +18,9 @@ const (
 )
 
 var (
-	resultsDir = flag.String("results_dir", "", "")
-	output     = flag.String("output", "", "")
-	mode       = flag.String("mode", tournaments, "")
+	resultsFile = flag.String("results", "", "Path to file with results")
+	output      = flag.String("output", "", "")
+	mode        = flag.String("mode", tournaments, "")
 )
 
 type FactionStat struct {
@@ -37,9 +37,9 @@ type TournamentStat struct {
 func main() {
 	flag.Parse()
 
-	league, err := model.LeagueFromJSON(*resultsDir)
+	league, err := model.LeagueFromJSON(*resultsFile)
 	if err != nil {
-		log.Fatalf("Unable to build League model frm %s: %v", *resultsDir, err)
+		log.Fatalf("Unable to build League model frm %s: %v", *resultsFile, err)
 	}
 
 	var v interface{}

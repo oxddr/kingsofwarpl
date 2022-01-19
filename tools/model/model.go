@@ -3,11 +3,8 @@ package model
 import (
 	"encoding/json"
 	"fmt"
-	"io/fs"
 	"io/ioutil"
 	"log"
-	"path/filepath"
-	"strings"
 	"time"
 )
 
@@ -22,10 +19,10 @@ type Player struct {
 }
 
 type Tournament struct {
-	Name     string    `json:"name"`
-	Date     time.Time `json:"date"`
-	Location string    `json:"location"`
-	URL      string    `json:"url"`
+	Name     string    `json:"name" csv:"name"`
+	Date     time.Time `json:"date" csv:"date"`
+	Location string    `json:"location" csv:"location"`
+	URL      string    `json:"url" csv:"url"`
 }
 
 type TournamentResults struct {
@@ -37,34 +34,22 @@ type League struct {
 	Tournaments []*TournamentResults
 }
 
-func LeagueFromJSON(dir string) (*League, error) {
+func LeagueFromJSON(file string) (*League, error) {
 	l := &League{}
 
-	var files []string
-	err := filepath.Walk(dir, func(path string, info fs.FileInfo, err error) error {
-		if strings.HasSuffix(path, ".json") {
-			files = append(files, path)
-		}
-		return nil
-	})
+	bytes, err := ioutil.ReadFile(file)
 	if err != nil {
-		return nil, fmt.Errorf("unable to list json files in %s: %v", dir, err)
+		return nil, fmt.Errorf("unable to read %q: %v", file, err)
 	}
 
-	for _, f := range files {
-		bytes, err := ioutil.ReadFile(f)
-		if err != nil {
-			return nil, fmt.Errorf("unable to read %q: %v", f, err)
-		}
-
-		t := &TournamentResults{}
-		err = json.Unmarshal(bytes, t)
-		if err != nil {
-			return nil, fmt.Errorf("unable to unmarshal %q: %v", f, err)
-		}
-		log.Default().Printf("Building League from %s", f)
-		l.Tournaments = append(l.Tournaments, t)
+	results := []*TournamentResults{}
+	err = json.Unmarshal(bytes, &results)
+	if err != nil {
+		return nil, fmt.Errorf("unable to unmarshal results from  %q: %v", file, err)
 	}
+	log.Default().Printf("Building Leaguefrom %s", file)
+	l.Tournaments = results
+
 	return l, nil
 }
 
