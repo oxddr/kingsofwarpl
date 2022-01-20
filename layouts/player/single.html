@@ -8,7 +8,7 @@
 
 {{ define "content" }}
 {{ $currentPlayer := .Params.Player }}
-{{ range $.Site.Data.season2021.ranking }}
+{{ range $.Site.Data.liga2021.data.ranking }}
 {{ if eq .id $currentPlayer }}
 
 <div class="text-center">

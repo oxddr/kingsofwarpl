@@ -1,21 +1,23 @@
-package main
+package ranking
 
 import (
-	"encoding/json"
-	"flag"
-	"io/ioutil"
+	"fmt"
 	"log"
 	"sort"
 
 	"github.com/oxddr/kingsofwarpl/tools/model"
 )
 
-var (
-	resultsFile = flag.String("results", "", "Path to file with results")
-	output      = flag.String("output", "", "")
-)
+func Build(year int, league *model.League) ([]*model.RankedPlayer, error) {
+	switch year {
+	case 2021:
+		return rank2021(league), nil
+	}
+	return nil, fmt.Errorf("No rankign algorithm specified for %d", year)
 
-func Rank2021(l *model.League) []*model.RankedPlayer {
+}
+
+func rank2021(l *model.League) []*model.RankedPlayer {
 	nameToPlayer := map[string]*model.RankedPlayer{}
 
 	for _, t := range l.Tournaments {
@@ -89,24 +91,4 @@ func Rank2021(l *model.League) []*model.RankedPlayer {
 	}
 
 	return players
-}
-
-func main() {
-	flag.Parse()
-
-	league, err := model.LeagueFromJSON(*resultsFile)
-	if err != nil {
-		log.Fatalf("Unable to build League from files: %v", err)
-	}
-
-	rankedPlayers := Rank2021(league)
-
-	bytes, err := json.MarshalIndent(rankedPlayers, "", "\t")
-	if err != nil {
-		log.Fatalf("Unable to marshal ranking: %v", err)
-	}
-	err = ioutil.WriteFile(*output, bytes, 0644)
-	if err != nil {
-		log.Fatalf("Unable to write ranking to file %q: %v", *output, err)
-	}
 }

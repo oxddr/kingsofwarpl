@@ -47,7 +47,7 @@ func LeagueFromJSON(file string) (*League, error) {
 	if err != nil {
 		return nil, fmt.Errorf("unable to unmarshal results from  %q: %v", file, err)
 	}
-	log.Default().Printf("Building Leaguefrom %s", file)
+	log.Default().Printf("Building League from %s", file)
 	l.Tournaments = results
 
 	return l, nil
