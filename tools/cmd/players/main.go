@@ -1,20 +1,21 @@
 package main
 
 import (
-	"flag"
 	"fmt"
 	"log"
 	"os"
 	"path"
 	"text/template"
 
+	"github.com/spf13/pflag"
+
 	"github.com/oxddr/kingsofwarpl/tools/model"
 	"gopkg.in/yaml.v3"
 )
 
 var (
-	rankingPath = flag.String("ranking_path", "", "")
-	output      = flag.String("output", "", "")
+	leagues = pflag.StringSlice("leagues", []string{}, "")
+	output  = pflag.String("output", "", "")
 
 	playerPageTmpl = `---
 {{ .FrontMatter }}---
@@ -30,25 +31,42 @@ type tplData struct {
 	FrontMatter string
 }
 
-func main() {
-	flag.Parse()
+func ExtractPlayers(leaguePaths []string) (map[string]*frontMatter, error) {
+	players := map[string]*frontMatter{}
+	for _, leaguePath := range leaguePaths {
+		league, err := model.LeagueFromJSON(leaguePath)
+		if err != nil {
+			return nil, fmt.Errorf("unable to create league from %q: %v", *&leaguePath, err)
+		}
 
-	ranking, err := model.RankingFromJSON(*rankingPath)
-	if err != nil {
-		log.Fatalf("Unable to create ranking from %q: %v", *rankingPath, err)
+		for _, t := range league.Tournaments {
+			for _, p := range t.Players {
+				players[p.ID] = &frontMatter{
+					Title:  fmt.Sprintf("Gracz: %s", p.Name),
+					Player: p.ID,
+				}
+			}
+		}
 	}
+	return players, nil
+}
+
+func main() {
+	pflag.Parse()
 
 	tpl, err := template.New("player").Parse(playerPageTmpl)
 	if err != nil {
 		log.Fatalf("Unable to create template: %v")
 	}
 
-	for _, p := range ranking {
-		fm := &frontMatter{
-			Title:  fmt.Sprintf("Gracz: %s", p.Name),
-			Player: p.ID,
-		}
+	log.Printf("%s", *leagues)
 
+	playersFM, err := ExtractPlayers(*leagues)
+	if err != nil {
+		log.Fatalf("Unable to extract players: %v", err)
+	}
+
+	for _, fm := range playersFM {
 		yamlBytes, err := yaml.Marshal(fm)
 		if err != nil {
 			log.Fatalf("Unable to create YAML: %v", err)
@@ -58,7 +76,7 @@ func main() {
 			FrontMatter: string(yamlBytes),
 		}
 
-		file := path.Join(*output, fmt.Sprintf("%s.md", p.ID))
+		file := path.Join(*output, fmt.Sprintf("%s.md", fm.Player))
 		f, err := os.Create(file)
 		if err != nil {
 			log.Fatalf("Unable to create %q: %v", file, err)

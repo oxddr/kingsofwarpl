@@ -1,0 +1,469 @@
+{
+	"ranking": [
+		{
+			"player": "MiSiO",
+			"id": "misio",
+			"results": [
+				{
+					"tournament": {
+						"name": "Inauguracyjny turniej polskiej ligii Kings of War, sezon 2022",
+						"date": "2022-01-22T00:00:00Z",
+						"location": "Inny Wymiar w Katowicach",
+						"url": "https://tabletop.to/inauguracyjny-turniej-polskiej-ligii-kings-of-war-sezon-2022"
+					},
+					"rank": 1,
+					"points": 30,
+					"is_ranking": true
+				}
+			],
+			"points": 30,
+			"points_total": 30,
+			"rank": 1
+		},
+		{
+			"player": "ddr",
+			"id": "ddr",
+			"results": [
+				{
+					"tournament": {
+						"name": "Inauguracyjny turniej polskiej ligii Kings of War, sezon 2022",
+						"date": "2022-01-22T00:00:00Z",
+						"location": "Inny Wymiar w Katowicach",
+						"url": "https://tabletop.to/inauguracyjny-turniej-polskiej-ligii-kings-of-war-sezon-2022"
+					},
+					"rank": 2,
+					"points": 29,
+					"is_ranking": true
+				}
+			],
+			"points": 29,
+			"points_total": 29,
+			"rank": 2
+		},
+		{
+			"player": "Lires",
+			"id": "lires",
+			"results": [
+				{
+					"tournament": {
+						"name": "Inauguracyjny turniej polskiej ligii Kings of War, sezon 2022",
+						"date": "2022-01-22T00:00:00Z",
+						"location": "Inny Wymiar w Katowicach",
+						"url": "https://tabletop.to/inauguracyjny-turniej-polskiej-ligii-kings-of-war-sezon-2022"
+					},
+					"rank": 3,
+					"points": 28,
+					"is_ranking": true
+				}
+			],
+			"points": 28,
+			"points_total": 28,
+			"rank": 3
+		},
+		{
+			"player": "Bart",
+			"id": "bart3",
+			"results": [
+				{
+					"tournament": {
+						"name": "Inauguracyjny turniej polskiej ligii Kings of War, sezon 2022",
+						"date": "2022-01-22T00:00:00Z",
+						"location": "Inny Wymiar w Katowicach",
+						"url": "https://tabletop.to/inauguracyjny-turniej-polskiej-ligii-kings-of-war-sezon-2022"
+					},
+					"rank": 4,
+					"points": 27,
+					"is_ranking": true
+				}
+			],
+			"points": 27,
+			"points_total": 27,
+			"rank": 4
+		},
+		{
+			"player": "Nieumarły Pla(nk)ton",
+			"id": "nieumary-plankton",
+			"results": [
+				{
+					"tournament": {
+						"name": "Inauguracyjny turniej polskiej ligii Kings of War, sezon 2022",
+						"date": "2022-01-22T00:00:00Z",
+						"location": "Inny Wymiar w Katowicach",
+						"url": "https://tabletop.to/inauguracyjny-turniej-polskiej-ligii-kings-of-war-sezon-2022"
+					},
+					"rank": 5,
+					"points": 26,
+					"is_ranking": true
+				}
+			],
+			"points": 26,
+			"points_total": 26,
+			"rank": 5
+		},
+		{
+			"player": "Stanisław \"Lajon\" Urbaniak",
+			"id": "stanisaw-lajon-urbaniak",
+			"results": [
+				{
+					"tournament": {
+						"name": "Inauguracyjny turniej polskiej ligii Kings of War, sezon 2022",
+						"date": "2022-01-22T00:00:00Z",
+						"location": "Inny Wymiar w Katowicach",
+						"url": "https://tabletop.to/inauguracyjny-turniej-polskiej-ligii-kings-of-war-sezon-2022"
+					},
+					"rank": 6,
+					"points": 25,
+					"is_ranking": true
+				}
+			],
+			"points": 25,
+			"points_total": 25,
+			"rank": 6
+		},
+		{
+			"player": "Adam \"Athard\" Cychner",
+			"id": "adam-athard-cychner",
+			"results": [
+				{
+					"tournament": {
+						"name": "Inauguracyjny turniej polskiej ligii Kings of War, sezon 2022",
+						"date": "2022-01-22T00:00:00Z",
+						"location": "Inny Wymiar w Katowicach",
+						"url": "https://tabletop.to/inauguracyjny-turniej-polskiej-ligii-kings-of-war-sezon-2022"
+					},
+					"rank": 7,
+					"points": 24,
+					"is_ranking": true
+				}
+			],
+			"points": 24,
+			"points_total": 24,
+			"rank": 7
+		},
+		{
+			"player": "Teo TomRider",
+			"id": "teo-tomrider",
+			"results": [
+				{
+					"tournament": {
+						"name": "Inauguracyjny turniej polskiej ligii Kings of War, sezon 2022",
+						"date": "2022-01-22T00:00:00Z",
+						"location": "Inny Wymiar w Katowicach",
+						"url": "https://tabletop.to/inauguracyjny-turniej-polskiej-ligii-kings-of-war-sezon-2022"
+					},
+					"rank": 8,
+					"points": 23,
+					"is_ranking": true
+				}
+			],
+			"points": 23,
+			"points_total": 23,
+			"rank": 8
+		},
+		{
+			"player": "Myter",
+			"id": "myter",
+			"results": [
+				{
+					"tournament": {
+						"name": "Inauguracyjny turniej polskiej ligii Kings of War, sezon 2022",
+						"date": "2022-01-22T00:00:00Z",
+						"location": "Inny Wymiar w Katowicach",
+						"url": "https://tabletop.to/inauguracyjny-turniej-polskiej-ligii-kings-of-war-sezon-2022"
+					},
+					"rank": 9,
+					"points": 22,
+					"is_ranking": true
+				}
+			],
+			"points": 22,
+			"points_total": 22,
+			"rank": 9
+		},
+		{
+			"player": "Oldwin",
+			"id": "oldwin",
+			"results": [
+				{
+					"tournament": {
+						"name": "Inauguracyjny turniej polskiej ligii Kings of War, sezon 2022",
+						"date": "2022-01-22T00:00:00Z",
+						"location": "Inny Wymiar w Katowicach",
+						"url": "https://tabletop.to/inauguracyjny-turniej-polskiej-ligii-kings-of-war-sezon-2022"
+					},
+					"rank": 10,
+					"points": 21,
+					"is_ranking": true
+				}
+			],
+			"points": 21,
+			"points_total": 21,
+			"rank": 10
+		},
+		{
+			"player": "Eledan",
+			"id": "eledan",
+			"results": [
+				{
+					"tournament": {
+						"name": "Inauguracyjny turniej polskiej ligii Kings of War, sezon 2022",
+						"date": "2022-01-22T00:00:00Z",
+						"location": "Inny Wymiar w Katowicach",
+						"url": "https://tabletop.to/inauguracyjny-turniej-polskiej-ligii-kings-of-war-sezon-2022"
+					},
+					"rank": 11,
+					"points": 20,
+					"is_ranking": true
+				}
+			],
+			"points": 20,
+			"points_total": 20,
+			"rank": 11
+		},
+		{
+			"player": "Rafal 'Troll' Maj",
+			"id": "rafal-troll-maj",
+			"results": [
+				{
+					"tournament": {
+						"name": "Inauguracyjny turniej polskiej ligii Kings of War, sezon 2022",
+						"date": "2022-01-22T00:00:00Z",
+						"location": "Inny Wymiar w Katowicach",
+						"url": "https://tabletop.to/inauguracyjny-turniej-polskiej-ligii-kings-of-war-sezon-2022"
+					},
+					"rank": 12,
+					"points": 19,
+					"is_ranking": true
+				}
+			],
+			"points": 19,
+			"points_total": 19,
+			"rank": 12
+		},
+		{
+			"player": "Grzegorz Gregx",
+			"id": "grzegorz-gregx",
+			"results": [
+				{
+					"tournament": {
+						"name": "Inauguracyjny turniej polskiej ligii Kings of War, sezon 2022",
+						"date": "2022-01-22T00:00:00Z",
+						"location": "Inny Wymiar w Katowicach",
+						"url": "https://tabletop.to/inauguracyjny-turniej-polskiej-ligii-kings-of-war-sezon-2022"
+					},
+					"rank": 13,
+					"points": 18,
+					"is_ranking": true
+				}
+			],
+			"points": 18,
+			"points_total": 18,
+			"rank": 13
+		},
+		{
+			"player": "Gobos",
+			"id": "gobos2",
+			"results": [
+				{
+					"tournament": {
+						"name": "Inauguracyjny turniej polskiej ligii Kings of War, sezon 2022",
+						"date": "2022-01-22T00:00:00Z",
+						"location": "Inny Wymiar w Katowicach",
+						"url": "https://tabletop.to/inauguracyjny-turniej-polskiej-ligii-kings-of-war-sezon-2022"
+					},
+					"rank": 14,
+					"points": 17,
+					"is_ranking": true
+				}
+			],
+			"points": 17,
+			"points_total": 17,
+			"rank": 14
+		}
+	],
+	"factions": [
+		{
+			"name": "Forces of the Abyss",
+			"times_played": 2,
+			"no_players": 2
+		},
+		{
+			"name": "Undead",
+			"times_played": 2,
+			"no_players": 2
+		},
+		{
+			"name": "Night-stalkers",
+			"times_played": 2,
+			"no_players": 2
+		},
+		{
+			"name": "Basilea",
+			"times_played": 2,
+			"no_players": 2
+		},
+		{
+			"name": "Dwarfs",
+			"times_played": 2,
+			"no_players": 2
+		},
+		{
+			"name": "The Herd",
+			"times_played": 1,
+			"no_players": 1
+		},
+		{
+			"name": "The Trident Realm of Neritica",
+			"times_played": 1,
+			"no_players": 1
+		},
+		{
+			"name": "Goblins",
+			"times_played": 1,
+			"no_players": 1
+		},
+		{
+			"name": "Elves",
+			"times_played": 1,
+			"no_players": 1
+		}
+	],
+	"tournaments": [
+		{
+			"tournament": {
+				"name": "Inauguracyjny turniej polskiej ligii Kings of War, sezon 2022",
+				"date": "2022-01-22T00:00:00Z",
+				"location": "Inny Wymiar w Katowicach",
+				"url": "https://tabletop.to/inauguracyjny-turniej-polskiej-ligii-kings-of-war-sezon-2022"
+			},
+			"players": [
+				{
+					"id": "misio",
+					"name": "MiSiO",
+					"rank": 1,
+					"faction": "The Trident Realm of Neritica",
+					"tp": 48,
+					"bonus_tp": 5,
+					"attrition_points": 4790
+				},
+				{
+					"id": "ddr",
+					"name": "ddr",
+					"rank": 2,
+					"faction": "Night-stalkers",
+					"tp": 53,
+					"bonus_tp": 0,
+					"attrition_points": 4030
+				},
+				{
+					"id": "lires",
+					"name": "Lires",
+					"rank": 3,
+					"faction": "Goblins",
+					"tp": 39,
+					"bonus_tp": 5,
+					"attrition_points": 4510
+				},
+				{
+					"id": "bart3",
+					"name": "Bart",
+					"rank": 4,
+					"faction": "Forces of the Abyss",
+					"tp": 37,
+					"bonus_tp": 5,
+					"attrition_points": 3725
+				},
+				{
+					"id": "nieumary-plankton",
+					"name": "Nieumarły Pla(nk)ton",
+					"rank": 5,
+					"faction": "Undead",
+					"tp": 38,
+					"bonus_tp": 0,
+					"attrition_points": 3800
+				},
+				{
+					"id": "stanisaw-lajon-urbaniak",
+					"name": "Stanisław \"Lajon\" Urbaniak",
+					"rank": 6,
+					"faction": "The Herd",
+					"tp": 37,
+					"bonus_tp": 0,
+					"attrition_points": 3550
+				},
+				{
+					"id": "adam-athard-cychner",
+					"name": "Adam \"Athard\" Cychner",
+					"rank": 7,
+					"faction": "Elves",
+					"tp": 31,
+					"bonus_tp": 5,
+					"attrition_points": 3320
+				},
+				{
+					"id": "teo-tomrider",
+					"name": "Teo TomRider",
+					"rank": 8,
+					"faction": "Basilea",
+					"tp": 28,
+					"bonus_tp": 5,
+					"attrition_points": 3455
+				},
+				{
+					"id": "myter",
+					"name": "Myter",
+					"rank": 9,
+					"faction": "Night-stalkers",
+					"tp": 24,
+					"bonus_tp": 5,
+					"attrition_points": 3205
+				},
+				{
+					"id": "oldwin",
+					"name": "Oldwin",
+					"rank": 10,
+					"faction": "Forces of the Abyss",
+					"tp": 21,
+					"bonus_tp": 5,
+					"attrition_points": 3505
+				},
+				{
+					"id": "eledan",
+					"name": "Eledan",
+					"rank": 11,
+					"faction": "Basilea",
+					"tp": 21,
+					"bonus_tp": 5,
+					"attrition_points": 2525
+				},
+				{
+					"id": "rafal-troll-maj",
+					"name": "Rafal 'Troll' Maj",
+					"rank": 12,
+					"faction": "Dwarfs",
+					"tp": 19,
+					"bonus_tp": 5,
+					"attrition_points": 3480
+				},
+				{
+					"id": "grzegorz-gregx",
+					"name": "Grzegorz Gregx",
+					"rank": 13,
+					"faction": "Dwarfs",
+					"tp": 19,
+					"bonus_tp": 5,
+					"attrition_points": 2115
+				},
+				{
+					"id": "gobos2",
+					"name": "Gobos",
+					"rank": 14,
+					"faction": "Undead",
+					"tp": 5,
+					"bonus_tp": 0,
+					"attrition_points": 1565
+				}
+			]
+		}
+	]
+}

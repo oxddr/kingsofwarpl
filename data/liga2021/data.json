@@ -379,37 +379,6 @@
 			"rank": 9
 		},
 		{
-			"player": "Stanisław \"Lajon\" Urbaniak",
-			"id": "stanisaw-lajon-urbaniak",
-			"results": [
-				{
-					"tournament": {
-						"name": "1 turniej ligi Kings of war 2021 [Warszawa]",
-						"date": "2021-01-24T00:00:00Z",
-						"location": "Warszawa",
-						"url": "https://tabletop.to/1-turniej-ligi-kings-of-war-2021-warszawa"
-					},
-					"rank": 9,
-					"points": 22,
-					"is_ranking": true
-				},
-				{
-					"tournament": {
-						"name": "III turniej Ligi Kings of War Polska 2021",
-						"date": "2021-04-18T00:00:00Z",
-						"location": "Warszawa",
-						"url": "https://tabletop.to/iii-turniej-ligi-kings-of-war-polska-2021"
-					},
-					"rank": 7,
-					"points": 24,
-					"is_ranking": true
-				}
-			],
-			"points": 46,
-			"points_total": 46,
-			"rank": 10
-		},
-		{
 			"player": "Kacper \"Alien\" Szczytowski",
 			"id": "kacper-alien-szczytowski",
 			"results": [
@@ -433,6 +402,37 @@
 					},
 					"rank": 8,
 					"points": 23,
+					"is_ranking": true
+				}
+			],
+			"points": 46,
+			"points_total": 46,
+			"rank": 10
+		},
+		{
+			"player": "Stanisław \"Lajon\" Urbaniak",
+			"id": "stanisaw-lajon-urbaniak",
+			"results": [
+				{
+					"tournament": {
+						"name": "1 turniej ligi Kings of war 2021 [Warszawa]",
+						"date": "2021-01-24T00:00:00Z",
+						"location": "Warszawa",
+						"url": "https://tabletop.to/1-turniej-ligi-kings-of-war-2021-warszawa"
+					},
+					"rank": 9,
+					"points": 22,
+					"is_ranking": true
+				},
+				{
+					"tournament": {
+						"name": "III turniej Ligi Kings of War Polska 2021",
+						"date": "2021-04-18T00:00:00Z",
+						"location": "Warszawa",
+						"url": "https://tabletop.to/iii-turniej-ligi-kings-of-war-polska-2021"
+					},
+					"rank": 7,
+					"points": 24,
 					"is_ranking": true
 				}
 			],
@@ -563,15 +563,15 @@
 			"rank": 15
 		},
 		{
-			"player": "Adam \"Athard\" Cychner",
-			"id": "adam-athard-cychner",
+			"player": "Grzegorz Gregx",
+			"id": "grzegorz-gregx",
 			"results": [
 				{
 					"tournament": {
-						"name": "1 turniej ligi Kings of war 2021 [Warszawa]",
-						"date": "2021-01-24T00:00:00Z",
-						"location": "Warszawa",
-						"url": "https://tabletop.to/1-turniej-ligi-kings-of-war-2021-warszawa"
+						"name": "II turniej cyklu MISTRZOSTW POLSKI Kings of War, 2021",
+						"date": "2021-02-27T00:00:00Z",
+						"location": "Inny Wymiar w Katowicach",
+						"url": "https://tabletop.to/ii-turniej-cyklu-mistrzostw-polski-kings-of-war-2021"
 					},
 					"rank": 7,
 					"points": 24,
@@ -583,15 +583,15 @@
 			"rank": 16
 		},
 		{
-			"player": "Grzegorz Gregx",
-			"id": "grzegorz-gregx",
+			"player": "Adam \"Athard\" Cychner",
+			"id": "adam-athard-cychner",
 			"results": [
 				{
 					"tournament": {
-						"name": "II turniej cyklu MISTRZOSTW POLSKI Kings of War, 2021",
-						"date": "2021-02-27T00:00:00Z",
-						"location": "Inny Wymiar w Katowicach",
-						"url": "https://tabletop.to/ii-turniej-cyklu-mistrzostw-polski-kings-of-war-2021"
+						"name": "1 turniej ligi Kings of war 2021 [Warszawa]",
+						"date": "2021-01-24T00:00:00Z",
+						"location": "Warszawa",
+						"url": "https://tabletop.to/1-turniej-ligi-kings-of-war-2021-warszawa"
 					},
 					"rank": 7,
 					"points": 24,
@@ -640,27 +640,17 @@
 			"no_players": 2
 		},
 		{
-			"name": "Elves",
-			"times_played": 2,
-			"no_players": 2
-		},
-		{
-			"name": "Abyssal Dwarfs",
-			"times_played": 2,
-			"no_players": 1
-		},
-		{
 			"name": "Ogres",
 			"times_played": 2,
 			"no_players": 1
 		},
 		{
-			"name": "Dwarfs",
+			"name": "Elves",
 			"times_played": 2,
-			"no_players": 1
+			"no_players": 2
 		},
 		{
-			"name": "Night-stalkers",
+			"name": "Dwarfs",
 			"times_played": 2,
 			"no_players": 1
 		},
@@ -670,17 +660,27 @@
 			"no_players": 2
 		},
 		{
+			"name": "Abyssal Dwarfs",
+			"times_played": 2,
+			"no_players": 1
+		},
+		{
+			"name": "Night-stalkers",
+			"times_played": 2,
+			"no_players": 1
+		},
+		{
+			"name": "Goblins",
+			"times_played": 1,
+			"no_players": 1
+		},
+		{
 			"name": "The League of Rhordia",
 			"times_played": 1,
 			"no_players": 1
 		},
 		{
 			"name": "The Trident Realm of Neritica",
-			"times_played": 1,
-			"no_players": 1
-		},
-		{
-			"name": "Goblins",
 			"times_played": 1,
 			"no_players": 1
 		},

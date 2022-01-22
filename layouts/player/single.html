@@ -8,49 +8,27 @@
 
 {{ define "content" }}
 {{ $currentPlayer := .Params.Player }}
-{{ range $.Site.Data.liga2021.data.ranking }}
-{{ if eq .id $currentPlayer }}
 
 <div class="text-center">
-  <a href="https://tabletop.to/profile/{{ .id }}">
+  <a href="https://tabletop.to/profile/{{ $currentPlayer }}">
     Profil tabletop.to <span class="glyphicon glyphicon-new-window"></span>
   </a>
 </div>
 
 <h2>Wyniki</h2>
 
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <div class="pull-left">
-      Liga 2021
-    </div>
-    <div class="pull-right">
-        Miejsce: <strong>{{ .rank }}</strong> | Punkty: <strong>{{ .points }}</strong> / {{ .points_total }}
-    </div>
-    <div class="clearfix"></div>
-  </div>
+{{ $currentPage := . }}
+{{ $seasons := (slice 2022 2021) }}
+{{ range $seasons }}
+  {{ $seasonData := index $.Site.Data (printf "liga%d" .) }}
+  {{ $currentPage.Scratch.Set "season" . }}
+  {{ $players := $seasonData.data.ranking }}
+  {{ range $players }}
+      {{ if eq .id $currentPlayer }}
+      {{ $currentPage.Scratch.Set "player" . }}
+      {{ partial "season.html" $currentPage }}
+    {{ end }}
+  {{ end }}
+{{ end }}
 
-  <table class="table table-hover">
-    <thead>
-      <tr>
-        <td style="width: 15%">Data</td>
-        <td>Turniej</td>
-        <td>Miejsce</td>
-        <td>Punkty</td>
-      </tr>
-    </thead>
-    <tbody>
-      {{ range .results }}
-      <tr class="{{ if .is_ranking }}success{{ end }}">
-        <td>{{ time.Format "2006-01-02" .tournament.date }}</td>
-        <td><a href="{{ .tournament.url }}">{{ .tournament.name }}</a></td>
-        <td>{{ .rank }}</td>
-        <td>{{ .points }}</td>
-      </tr>
-      {{ end }}
-    </tbody>
-  </table>
-</div>
-{{ end }}
-{{ end }}
 {{ end }}

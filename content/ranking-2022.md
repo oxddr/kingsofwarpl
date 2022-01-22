@@ -1,6 +1,7 @@
 ---
 title: Ranking Ligi 2022
-type: page
+type: ranking
+season: 2022
 menu:
   main:
     name: Ranking
@@ -9,5 +10,3 @@ menu:
 aliases:
 - /ranking
 ---
-
-W budowie

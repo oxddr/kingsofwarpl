@@ -8,6 +8,7 @@ import (
 	"log"
 	"net/http"
 	"regexp"
+	"sort"
 	"strconv"
 	"strings"
 	"time"
@@ -50,10 +51,11 @@ func ExtractLocation(doc *goquery.Document) string {
 
 func ExtractPlayers(doc *goquery.Document) ([]*model.Player, error) {
 	var players []*model.Player
-	var mErr, err error
+	var mErr error
 	doc.Find("#ladder tbody tr").Each(func(_ int, s *goquery.Selection) {
 		p := &model.Player{}
 		s.Find("td").Each(func(i int, s *goquery.Selection) {
+			var err error
 			switch i {
 			case 0:
 				a := s.Find("a")
@@ -64,34 +66,20 @@ func ExtractPlayers(doc *goquery.Document) ([]*model.Player, error) {
 				if len(matches) > 1 {
 					p.ID = matches[1]
 				}
-			case 1:
-				p.Rank, err = strconv.Atoi(s.Text())
-				if err != nil {
-					mErr = multierr.Append(mErr, err)
-				}
 			case 3:
 				if s.Text() != "-" {
 					p.Faction = s.Text()
 				}
 			case 4:
 				p.TP, err = strconv.Atoi(s.Text())
-				if err != nil {
-					mErr = multierr.Append(mErr, err)
-				}
-
 			case 5:
 				p.BonusTP, err = strconv.Atoi(s.Text())
-				if err != nil {
-					mErr = multierr.Append(mErr, err)
-				}
-
 			case 7:
 				pts := strings.Split(s.Text(), "/")[0]
 				p.AttritionPoints, err = strconv.Atoi(pts)
-				if err != nil {
-					mErr = multierr.Append(mErr, err)
-				}
-
+			}
+			if err != nil {
+				mErr = multierr.Append(mErr, err)
 			}
 		})
 		players = append(players, p)
@@ -123,6 +111,7 @@ func GetSingle(t *model.Tournament) (*model.TournamentResults, error) {
 	if err != nil {
 		return nil, fmt.Errorf("Unable to extract tournament's players: %v", err)
 	}
+	rankPlayers(players)
 
 	return &model.TournamentResults{
 		Tournament: &model.Tournament{
@@ -133,6 +122,19 @@ func GetSingle(t *model.Tournament) (*model.TournamentResults, error) {
 		},
 		Players: players,
 	}, nil
+}
+
+func rankPlayers(players []*model.Player) {
+	sort.Slice(players, func(i, j int) bool {
+		if players[i].TotalTP() != players[j].TotalTP() {
+			return players[i].TotalTP() > players[j].TotalTP()
+		}
+		return players[i].AttritionPoints > players[j].AttritionPoints
+	})
+
+	for i, p := range players {
+		p.Rank = i + 1
+	}
 }
 
 func main() {

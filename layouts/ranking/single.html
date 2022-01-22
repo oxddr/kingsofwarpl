@@ -45,7 +45,7 @@
     {{ range $seasonData.data.tournaments }}
     <tr>
       <td>{{ time.Format "2006-01-02" .tournament.date }}</td>
-      <td><a href="{{ .url }}">{{ .tournament.name }}</a></td>
+      <td><a href="{{ .tournament.url }}">{{ .tournament.name }}</a></td>
       <td>{{ len .players }}</td>
     </tr>
     {{ end }}

@@ -18,11 +18,15 @@ type Player struct {
 	AttritionPoints int    `json:"attrition_points"`
 }
 
+func (p *Player) TotalTP() int {
+	return p.TP + p.BonusTP
+}
+
 type Tournament struct {
-	Name     string    `json:"name" csv:"name"`
-	Date     time.Time `json:"date" csv:"date"`
-	Location string    `json:"location" csv:"location"`
-	URL      string    `json:"url" csv:"url"`
+	Name     string    `json:"name"`
+	Date     time.Time `json:"date"`
+	Location string    `json:"location"`
+	URL      string    `json:"url"`
 }
 
 type TournamentResults struct {
