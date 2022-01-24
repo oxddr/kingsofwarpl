@@ -18,12 +18,21 @@
   "signup_url": "https://www.tabletop.to/inauguracyjny-turniej-polskiej-ligii-kings-of-war-sezon-2022"
 },
 {
+  "name": "Krawaty 14",
+  "date": "2022-02-13",
+  "city": "Warszawa",
+  "location": "Klub Adeptus Mechanicus al. Krakowska 114, Warszawa",
+  "format": 1880,
+  "event_url": "https://forum.kingsofwar.pl/showthread.php?tid=77",
+  "signup_url": "https://tabletop.to/krawaty-14/signups"
+},
+{
   "name": "II turniej Ligii King of War - Kraków",
   "date": "2022-02-26",
   "city": "Kraków",
   "location": "MDK Grunwaldzka, ul. Grunwaldzka 5 Kraków",
   "format": 1880,
   "event_url": "https://www.facebook.com/events/3008196419443442",
-  "signup_url": "https://tabletop.to/ii-turniej-ligii-kings-of-war-2022-krakow"
+  "signup_url": "https://tabletop.to/ii-turniej-ligii-kings-of-war-2022-krakow/signups"
 }
 ]
