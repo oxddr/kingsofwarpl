@@ -59,8 +59,6 @@ func main() {
 		log.Fatalf("Unable to create template: %v")
 	}
 
-	log.Printf("%s", *leagues)
-
 	playersFM, err := ExtractPlayers(*leagues)
 	if err != nil {
 		log.Fatalf("Unable to extract players: %v", err)

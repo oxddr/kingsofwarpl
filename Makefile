@@ -28,7 +28,8 @@ data/liga2022/data.json: data/liga2022/results.json $(scribe_bin)
 player_pages: data/liga2021/data.json data/liga2022/data.json $(players_bin)
 	./$(players_bin) \
 		--output=content/player \
-		--leagues="data/liga2021/results.json,data/liga2022/results.json"
+		--leagues="data/liga2021/results.json" \
+		--leagues="data/liga2022/results.json"
 
 $(tttscraper_bin): tools/cmd/tttscraper/main.go
 	cd tools/cmd/tttscraper && go build .
