@@ -107,8 +107,8 @@
 				"attrition_points": 2525
 			},
 			{
-				"id": "rafal-troll-maj",
-				"name": "Rafal 'Troll' Maj",
+				"id": "rafal-troll",
+				"name": "Rafal 'Troll'",
 				"rank": 12,
 				"faction": "Dwarfs",
 				"tp": 19,
@@ -132,6 +132,196 @@
 				"tp": 5,
 				"bonus_tp": 0,
 				"attrition_points": 1565
+			}
+		]
+	},
+	{
+		"tournament": {
+			"name": "II turniej Ligii Kings of War 2022 - Kraków",
+			"date": "2022-02-26T00:00:00Z",
+			"location": "Kraków",
+			"url": "https://tabletop.to/ii-turniej-ligii-kings-of-war-2022-krakow"
+		},
+		"players": [
+			{
+				"id": "makras",
+				"name": "Makras",
+				"rank": 1,
+				"faction": "Ogres",
+				"tp": 48,
+				"bonus_tp": 5,
+				"attrition_points": 4515
+			},
+			{
+				"id": "ddr",
+				"name": "ddr",
+				"rank": 2,
+				"faction": "Night-stalkers",
+				"tp": 48,
+				"bonus_tp": 5,
+				"attrition_points": 3125
+			},
+			{
+				"id": "lires",
+				"name": "Lires",
+				"rank": 3,
+				"faction": "Goblins",
+				"tp": 44,
+				"bonus_tp": 5,
+				"attrition_points": 4580
+			},
+			{
+				"id": "adam-athard-cychner",
+				"name": "Adam \"Athard\" Cychner",
+				"rank": 4,
+				"faction": "Elves",
+				"tp": 43,
+				"bonus_tp": 5,
+				"attrition_points": 3970
+			},
+			{
+				"id": "bart3",
+				"name": "Bart",
+				"rank": 5,
+				"faction": "Forces of the Abyss",
+				"tp": 41,
+				"bonus_tp": 5,
+				"attrition_points": 4950
+			},
+			{
+				"id": "misio",
+				"name": "MiSiO",
+				"rank": 6,
+				"faction": "The Trident Realm of Neritica",
+				"tp": 38,
+				"bonus_tp": 5,
+				"attrition_points": 4690
+			},
+			{
+				"id": "nieumary-plankton",
+				"name": "Nieumarły Pla(nk)ton",
+				"rank": 7,
+				"faction": "Undead",
+				"tp": 38,
+				"bonus_tp": 5,
+				"attrition_points": 3845
+			},
+			{
+				"id": "stanisaw-lajon-urbaniak",
+				"name": "Stanisław \"Lajon\" Urbaniak",
+				"rank": 8,
+				"faction": "The Empire of Dust",
+				"tp": 38,
+				"bonus_tp": 5,
+				"attrition_points": 3645
+			},
+			{
+				"id": "bartoszwaw",
+				"name": "BartoszWaw",
+				"rank": 9,
+				"faction": "",
+				"tp": 31,
+				"bonus_tp": 5,
+				"attrition_points": 3095
+			},
+			{
+				"id": "eledan",
+				"name": "Eledan",
+				"rank": 10,
+				"faction": "Basilea",
+				"tp": 30,
+				"bonus_tp": 5,
+				"attrition_points": 3520
+			},
+			{
+				"id": "gobos2",
+				"name": "Gobos",
+				"rank": 11,
+				"faction": "Northern Alliance",
+				"tp": 32,
+				"bonus_tp": 0,
+				"attrition_points": 2565
+			},
+			{
+				"id": "kacper-alien-szczytowski",
+				"name": "Kacper \"Alien\" Szczytowski",
+				"rank": 12,
+				"faction": "Undead",
+				"tp": 25,
+				"bonus_tp": 5,
+				"attrition_points": 3050
+			},
+			{
+				"id": "lukasz-jarochowski",
+				"name": "Lukasz Jarochowski",
+				"rank": 13,
+				"faction": "",
+				"tp": 25,
+				"bonus_tp": 5,
+				"attrition_points": 2450
+			},
+			{
+				"id": "rafal-troll",
+				"name": "Rafal 'Troll'",
+				"rank": 14,
+				"faction": "Dwarfs",
+				"tp": 22,
+				"bonus_tp": 5,
+				"attrition_points": 2980
+			},
+			{
+				"id": "maciejufo-szczytowski",
+				"name": "Maciej\"UFO\" Szczytowski",
+				"rank": 15,
+				"faction": "",
+				"tp": 20,
+				"bonus_tp": 5,
+				"attrition_points": 3010
+			},
+			{
+				"id": "grzegorz-gregx",
+				"name": "Grzegorz Gregx",
+				"rank": 16,
+				"faction": "Free Dwarfs",
+				"tp": 20,
+				"bonus_tp": 5,
+				"attrition_points": 2835
+			},
+			{
+				"id": "teo-tomrider",
+				"name": "Teo TomRider",
+				"rank": 17,
+				"faction": "Basilea",
+				"tp": 19,
+				"bonus_tp": 5,
+				"attrition_points": 3450
+			},
+			{
+				"id": "seba",
+				"name": "Seba",
+				"rank": 18,
+				"faction": "The Varangur",
+				"tp": 17,
+				"bonus_tp": 5,
+				"attrition_points": 2470
+			},
+			{
+				"id": "berdysz",
+				"name": "Berdysz",
+				"rank": 19,
+				"faction": "Kingdoms of Men",
+				"tp": 15,
+				"bonus_tp": 5,
+				"attrition_points": 2385
+			},
+			{
+				"id": "oldwin",
+				"name": "Oldwin",
+				"rank": 20,
+				"faction": "Abyssal Dwarfs",
+				"tp": 6,
+				"bonus_tp": 5,
+				"attrition_points": 2210
 			}
 		]
 	}

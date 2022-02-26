@@ -280,8 +280,8 @@
 				"attrition_points": 4095
 			},
 			{
-				"id": "rafal-troll-maj",
-				"name": "Rafal 'Troll' Maj",
+				"id": "rafal-troll",
+				"name": "Rafal 'Troll'",
 				"rank": 5,
 				"faction": "",
 				"tp": 25,

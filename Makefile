@@ -22,7 +22,7 @@ data/liga2022/results.json: data/liga2022/description.json $(tttscraper_bin)
 	./$(tttscraper_bin) --description $<  --output $@
 
 data/liga2022/data.json: data/liga2022/results.json $(scribe_bin)
-	./$(scribe_bin) --year 2021 --results $< --output $@
+	./$(scribe_bin) --year 2022 --results $< --output $@
 
 .PHONY: player_pages
 player_pages: data/liga2021/data.json data/liga2022/data.json $(players_bin)
@@ -34,7 +34,7 @@ player_pages: data/liga2021/data.json data/liga2022/data.json $(players_bin)
 $(tttscraper_bin): tools/cmd/tttscraper/main.go
 	cd tools/cmd/tttscraper && go build .
 
-$(scribe_bin): tools/cmd/scribe/main.go
+$(scribe_bin): tools/cmd/scribe/main.go tools/ranking/*.go tools/model/*.go
 	cd tools/cmd/scribe/ && go build .
 
 $(players_bin): tools/cmd/players/main.go

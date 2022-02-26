@@ -523,8 +523,8 @@
 			"rank": 13
 		},
 		{
-			"player": "Rafal 'Troll' Maj",
-			"id": "rafal-troll-maj",
+			"player": "Rafal 'Troll'",
+			"id": "rafal-troll",
 			"results": [
 				{
 					"tournament": {
@@ -563,15 +563,15 @@
 			"rank": 15
 		},
 		{
-			"player": "Grzegorz Gregx",
-			"id": "grzegorz-gregx",
+			"player": "Adam \"Athard\" Cychner",
+			"id": "adam-athard-cychner",
 			"results": [
 				{
 					"tournament": {
-						"name": "II turniej cyklu MISTRZOSTW POLSKI Kings of War, 2021",
-						"date": "2021-02-27T00:00:00Z",
-						"location": "Inny Wymiar w Katowicach",
-						"url": "https://tabletop.to/ii-turniej-cyklu-mistrzostw-polski-kings-of-war-2021"
+						"name": "1 turniej ligi Kings of war 2021 [Warszawa]",
+						"date": "2021-01-24T00:00:00Z",
+						"location": "Warszawa",
+						"url": "https://tabletop.to/1-turniej-ligi-kings-of-war-2021-warszawa"
 					},
 					"rank": 7,
 					"points": 24,
@@ -583,15 +583,15 @@
 			"rank": 16
 		},
 		{
-			"player": "Adam \"Athard\" Cychner",
-			"id": "adam-athard-cychner",
+			"player": "Grzegorz Gregx",
+			"id": "grzegorz-gregx",
 			"results": [
 				{
 					"tournament": {
-						"name": "1 turniej ligi Kings of war 2021 [Warszawa]",
-						"date": "2021-01-24T00:00:00Z",
-						"location": "Warszawa",
-						"url": "https://tabletop.to/1-turniej-ligi-kings-of-war-2021-warszawa"
+						"name": "II turniej cyklu MISTRZOSTW POLSKI Kings of War, 2021",
+						"date": "2021-02-27T00:00:00Z",
+						"location": "Inny Wymiar w Katowicach",
+						"url": "https://tabletop.to/ii-turniej-cyklu-mistrzostw-polski-kings-of-war-2021"
 					},
 					"rank": 7,
 					"points": 24,
@@ -640,16 +640,6 @@
 			"no_players": 2
 		},
 		{
-			"name": "Ogres",
-			"times_played": 2,
-			"no_players": 1
-		},
-		{
-			"name": "Elves",
-			"times_played": 2,
-			"no_players": 2
-		},
-		{
 			"name": "Dwarfs",
 			"times_played": 2,
 			"no_players": 1
@@ -660,17 +650,27 @@
 			"no_players": 2
 		},
 		{
-			"name": "Abyssal Dwarfs",
-			"times_played": 2,
-			"no_players": 1
-		},
-		{
 			"name": "Night-stalkers",
 			"times_played": 2,
 			"no_players": 1
 		},
 		{
-			"name": "Goblins",
+			"name": "Elves",
+			"times_played": 2,
+			"no_players": 2
+		},
+		{
+			"name": "Abyssal Dwarfs",
+			"times_played": 2,
+			"no_players": 1
+		},
+		{
+			"name": "Ogres",
+			"times_played": 2,
+			"no_players": 1
+		},
+		{
+			"name": "Order of the Green Lady",
 			"times_played": 1,
 			"no_players": 1
 		},
@@ -685,7 +685,7 @@
 			"no_players": 1
 		},
 		{
-			"name": "Order of the Green Lady",
+			"name": "Goblins",
 			"times_played": 1,
 			"no_players": 1
 		}
@@ -972,8 +972,8 @@
 					"attrition_points": 4095
 				},
 				{
-					"id": "rafal-troll-maj",
-					"name": "Rafal 'Troll' Maj",
+					"id": "rafal-troll",
+					"name": "Rafal 'Troll'",
 					"rank": 5,
 					"faction": "",
 					"tp": 25,

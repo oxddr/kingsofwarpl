@@ -18,11 +18,21 @@ import (
 	"go.uber.org/multierr"
 )
 
+const (
+	PLAYER   = "Player"
+	TP       = "TP"
+	BONUS_TP = "Bonus TP"
+	ATTR     = "AP/H2H"
+	FACTION  = "Faction"
+)
+
 var (
 	desc   = flag.String("description", "", "Path to file with league description")
 	output = flag.String("output", "", "Path to file with league data.")
 
 	idRegex = regexp.MustCompile("href=/profile/(.*)>Profile")
+
+	columns = []string{PLAYER, TP, BONUS_TP, ATTR, FACTION}
 )
 
 func ExtractName(doc *goquery.Document) string {
@@ -50,14 +60,32 @@ func ExtractLocation(doc *goquery.Document) string {
 }
 
 func ExtractPlayers(doc *goquery.Document) ([]*model.Player, error) {
+	indices := map[int]string{}
+	doc.Find("#ladder thead tr").Each(func(i int, s *goquery.Selection) {
+		s.Find("th").Each(func(i int, s *goquery.Selection) {
+			for _, v := range columns {
+				// log.Printf("Header %q, index %d", s.Text(), i)
+				if v == s.Text() {
+					indices[i] = v
+					return
+				}
+			}
+		})
+	})
+
 	var players []*model.Player
 	var mErr error
 	doc.Find("#ladder tbody tr").Each(func(_ int, s *goquery.Selection) {
 		p := &model.Player{}
 		s.Find("td").Each(func(i int, s *goquery.Selection) {
+			v, ok := indices[i]
+			if !ok {
+				return
+			}
+
 			var err error
-			switch i {
-			case 0:
+			switch v {
+			case PLAYER:
 				a := s.Find("a")
 				p.Name = strings.TrimSuffix(a.Text(), "R")
 				hiddenA := a.AttrOr("title", "")
@@ -66,15 +94,15 @@ func ExtractPlayers(doc *goquery.Document) ([]*model.Player, error) {
 				if len(matches) > 1 {
 					p.ID = matches[1]
 				}
-			case 3:
+			case FACTION:
 				if s.Text() != "-" {
 					p.Faction = s.Text()
 				}
-			case 4:
+			case TP:
 				p.TP, err = strconv.Atoi(s.Text())
-			case 5:
+			case BONUS_TP:
 				p.BonusTP, err = strconv.Atoi(s.Text())
-			case 7:
+			case ATTR:
 				pts := strings.Split(s.Text(), "/")[0]
 				p.AttritionPoints, err = strconv.Atoi(pts)
 			}
@@ -135,6 +163,15 @@ func rankPlayers(players []*model.Player) {
 	for i, p := range players {
 		p.Rank = i + 1
 	}
+}
+
+func indexOf(s string, slice []string) int {
+	for i, v := range slice {
+		if v == s {
+			return i
+		}
+	}
+	return -1
 }
 
 func main() {

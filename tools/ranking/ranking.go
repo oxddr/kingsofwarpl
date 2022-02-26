@@ -8,16 +8,45 @@ import (
 	"github.com/oxddr/kingsofwarpl/tools/model"
 )
 
+type tournamentSelector int
+
+const (
+	N_MINUS_2 tournamentSelector = iota
+	ALL
+)
+
 func Build(year int, league *model.League) ([]*model.RankedPlayer, error) {
 	switch year {
 	case 2021:
 		return rank2021(league), nil
+	case 2022:
+		return rank2022(league), nil
 	}
 	return nil, fmt.Errorf("No rankign algorithm specified for %d", year)
 
 }
 
+func rank2022(l *model.League) []*model.RankedPlayer {
+	return rank(l, ALL)
+}
+
 func rank2021(l *model.League) []*model.RankedPlayer {
+	return rank(l, N_MINUS_2)
+}
+
+func (t tournamentSelector) Top(n int) int {
+	switch t {
+	case N_MINUS_2:
+		top := n - 2
+		if top <= 0 {
+			return 1
+		}
+		return top
+	}
+	return n
+}
+
+func rank(l *model.League, t tournamentSelector) []*model.RankedPlayer {
 	nameToPlayer := map[string]*model.RankedPlayer{}
 
 	for _, t := range l.Tournaments {
@@ -48,10 +77,7 @@ func rank2021(l *model.League) []*model.RankedPlayer {
 		}
 	}
 
-	topN := len(l.Tournaments) - 2
-	if topN <= 0 {
-		topN = 1
-	}
+	topN := t.Top(len(l.Tournaments))
 	log.Printf("Counting top %d scores", topN)
 
 	players := []*model.RankedPlayer{}
