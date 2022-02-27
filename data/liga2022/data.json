@@ -249,37 +249,6 @@
 			"rank": 8
 		},
 		{
-			"player": "Gobos",
-			"id": "gobos2",
-			"results": [
-				{
-					"tournament": {
-						"name": "Inauguracyjny turniej polskiej ligii Kings of War, sezon 2022",
-						"date": "2022-01-22T00:00:00Z",
-						"location": "Inny Wymiar w Katowicach",
-						"url": "https://tabletop.to/inauguracyjny-turniej-polskiej-ligii-kings-of-war-sezon-2022"
-					},
-					"rank": 14,
-					"points": 17,
-					"is_ranking": true
-				},
-				{
-					"tournament": {
-						"name": "II turniej Ligii Kings of War 2022 - Kraków",
-						"date": "2022-02-26T00:00:00Z",
-						"location": "Kraków",
-						"url": "https://tabletop.to/ii-turniej-ligii-kings-of-war-2022-krakow"
-					},
-					"rank": 11,
-					"points": 20,
-					"is_ranking": true
-				}
-			],
-			"points": 37,
-			"points_total": 37,
-			"rank": 9
-		},
-		{
 			"player": "Teo TomRider",
 			"id": "teo-tomrider",
 			"results": [
@@ -303,6 +272,37 @@
 					},
 					"rank": 17,
 					"points": 14,
+					"is_ranking": true
+				}
+			],
+			"points": 37,
+			"points_total": 37,
+			"rank": 9
+		},
+		{
+			"player": "Gobos",
+			"id": "gobos2",
+			"results": [
+				{
+					"tournament": {
+						"name": "Inauguracyjny turniej polskiej ligii Kings of War, sezon 2022",
+						"date": "2022-01-22T00:00:00Z",
+						"location": "Inny Wymiar w Katowicach",
+						"url": "https://tabletop.to/inauguracyjny-turniej-polskiej-ligii-kings-of-war-sezon-2022"
+					},
+					"rank": 14,
+					"points": 17,
+					"is_ranking": true
+				},
+				{
+					"tournament": {
+						"name": "II turniej Ligii Kings of War 2022 - Kraków",
+						"date": "2022-02-26T00:00:00Z",
+						"location": "Kraków",
+						"url": "https://tabletop.to/ii-turniej-ligii-kings-of-war-2022-krakow"
+					},
+					"rank": 11,
+					"points": 20,
 					"is_ranking": true
 				}
 			],
@@ -566,24 +566,14 @@
 	],
 	"factions": [
 		{
-			"name": "Undead",
-			"times_played": 4,
-			"no_players": 3
-		},
-		{
 			"name": "Basilea",
 			"times_played": 4,
 			"no_players": 2
 		},
 		{
-			"name": "Night-stalkers",
-			"times_played": 3,
-			"no_players": 2
-		},
-		{
-			"name": "Dwarfs",
-			"times_played": 3,
-			"no_players": 2
+			"name": "Undead",
+			"times_played": 4,
+			"no_players": 3
 		},
 		{
 			"name": "(unknown)",
@@ -596,12 +586,17 @@
 			"no_players": 2
 		},
 		{
-			"name": "Elves",
-			"times_played": 2,
-			"no_players": 1
+			"name": "Dwarfs",
+			"times_played": 3,
+			"no_players": 2
 		},
 		{
-			"name": "Goblins",
+			"name": "Night-stalkers",
+			"times_played": 3,
+			"no_players": 2
+		},
+		{
+			"name": "Elves",
 			"times_played": 2,
 			"no_players": 1
 		},
@@ -611,7 +606,12 @@
 			"no_players": 1
 		},
 		{
-			"name": "Northern Alliance",
+			"name": "Goblins",
+			"times_played": 2,
+			"no_players": 1
+		},
+		{
+			"name": "The Varangur",
 			"times_played": 1,
 			"no_players": 1
 		},
@@ -621,12 +621,17 @@
 			"no_players": 1
 		},
 		{
-			"name": "Free Dwarfs",
+			"name": "The Herd",
 			"times_played": 1,
 			"no_players": 1
 		},
 		{
-			"name": "The Herd",
+			"name": "Northern Alliance",
+			"times_played": 1,
+			"no_players": 1
+		},
+		{
+			"name": "Abyssal Dwarfs",
 			"times_played": 1,
 			"no_players": 1
 		},
@@ -636,17 +641,12 @@
 			"no_players": 1
 		},
 		{
-			"name": "The Varangur",
-			"times_played": 1,
-			"no_players": 1
-		},
-		{
 			"name": "Ogres",
 			"times_played": 1,
 			"no_players": 1
 		},
 		{
-			"name": "Abyssal Dwarfs",
+			"name": "Free Dwarfs",
 			"times_played": 1,
 			"no_players": 1
 		}

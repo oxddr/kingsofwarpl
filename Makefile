@@ -31,7 +31,7 @@ player_pages: data/liga2021/data.json data/liga2022/data.json $(players_bin)
 		--leagues="data/liga2021/results.json" \
 		--leagues="data/liga2022/results.json"
 
-$(tttscraper_bin): tools/cmd/tttscraper/main.go
+$(tttscraper_bin): tools/tttscraper/*.go tools/cmd/tttscraper/main.go
 	cd tools/cmd/tttscraper && go build .
 
 $(scribe_bin): tools/cmd/scribe/main.go tools/ranking/*.go tools/model/*.go
