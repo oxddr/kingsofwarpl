@@ -16,8 +16,8 @@ clean: $(data)
 
 data: $(data)
 
-$(data): data/%.json: sql/%.sh $(db)
-	$< $(db) > $@
+$(data): data/%.json: sql/%.sql $(db)
+	echo '.mode json' | cat - $< | sqlite3 $(db) | python -m json.tool > $@
 
 data/liga2021/description.json:
 	curl -L "https://docs.google.com/spreadsheets/d/e/2PACX-1vQDorbeJ3svVWrbYYvtCNBOLif-mCCtjz45ndjxUtF0Ec_o77D20E5ejQtPcvM-YguvU1wH6BTxCaoC/pub?gid=0&single=true&output=csv" |  mlr --csv sort -f date  | mlr --c2j --jlistwrap cat > $@
