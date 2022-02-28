@@ -21,10 +21,12 @@
       Strona wydarzenia
     </a>
   </p>
+  {{ if .signup_url }}
   <p class="list-group-item-text">
     <a href="{{ .signup_url }}">
       <span class="glyphicon glyphicon-pencil"></span>
       Zapisy
     </a>
   </p>
+  {{ end }}
 </div>

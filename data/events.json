@@ -1,38 +1,56 @@
 [
-{
-  "name": "Krawaty 13",
-  "date": "2022-01-16",
-  "city": "Warszawa",
-  "location": "Klub Adeptus Mechanicus al. Krakowska 114, Warszawa",
-  "format": 1995,
-  "event_url": "https://forum.kingsofwar.pl/showthread.php?tid=72",
-  "signup_url": "https://tabletop.to/krawaty-13/signups"
-},
-{
-  "name": "Inauguracyjny turniej polskiej ligii Kings of War, sezon 2022",
-  "date": "2022-01-22",
-  "city": "Katowice",
-  "location": "Inny Wymiar, Katowice, ul. Bożogrobców 20",
-  "format": 1995,
-  "event_url": "https://www.facebook.com/events/617366889679424",
-  "signup_url": "https://www.tabletop.to/inauguracyjny-turniej-polskiej-ligii-kings-of-war-sezon-2022"
-},
-{
-  "name": "Krawaty 14",
-  "date": "2022-02-13",
-  "city": "Warszawa",
-  "location": "Klub Adeptus Mechanicus al. Krakowska 114, Warszawa",
-  "format": 1880,
-  "event_url": "https://forum.kingsofwar.pl/showthread.php?tid=77",
-  "signup_url": "https://tabletop.to/krawaty-14/signups"
-},
-{
-  "name": "II turniej Ligii King of War - Kraków",
-  "date": "2022-02-26",
-  "city": "Kraków",
-  "location": "MDK Grunwaldzka, ul. Grunwaldzka 5 Kraków",
-  "format": 1880,
-  "event_url": "https://www.facebook.com/events/3008196419443442",
-  "signup_url": "https://tabletop.to/ii-turniej-ligii-kings-of-war-2022-krakow/signups"
-}
+    {
+        "name": "Krawaty 15",
+        "date": "2022-03-05",
+        "city": "Warszawa",
+        "location": "Klub Adeptus Mechanicus al. Krakowska 114, Warszawa",
+        "format": 1995,
+        "event_url": "https://forum.kingsofwar.pl/showthread.php?tid=78",
+        "signup_url": "https://tabletop.to/krawaty-15"
+    },
+    {
+        "name": "Gigantyczny problem z Zielonymi",
+        "date": "2022-02-27",
+        "city": "Wroc\u0142aw",
+        "location": "Bolter, Podwale 6, 50-043 Wroc\u0142aw",
+        "format": 2300,
+        "event_url": "https://www.facebook.com/events/360306015602256/",
+        "signup_url": null
+    },
+    {
+        "name": "II turniej Ligii King of War - Krak\u00f3w",
+        "date": "2022-02-26",
+        "city": "Krak\u00f3w",
+        "location": "MDK Grunwaldzka, ul. Grunwaldzka 5 Krak\u00f3w",
+        "format": 1880,
+        "event_url": "https://www.facebook.com/events/3008196419443442",
+        "signup_url": "https://tabletop.to/ii-turniej-ligii-kings-of-war-2022-krakow"
+    },
+    {
+        "name": "Krawaty 14",
+        "date": "2022-02-14",
+        "city": "Warszawa",
+        "location": "Klub Adeptus Mechanicus al. Krakowska 114, Warszawa",
+        "format": 1880,
+        "event_url": "https://forum.kingsofwar.pl/showthread.php?tid=77",
+        "signup_url": "https://tabletop.to/krawaty-14"
+    },
+    {
+        "name": "Inauguracyjny turniej polskiej ligii Kings of War, sezon 2022",
+        "date": "2022-01-22",
+        "city": "Katowice",
+        "location": " Inny Wymiar, Katowice, ul. Bo\u017cogrobc\u00f3w 20",
+        "format": 1995,
+        "event_url": "https://www.facebook.com/events/617366889679424",
+        "signup_url": "https://tabletop.to/inauguracyjny-turniej-polskiej-ligii-kings-of-war-sezon-2022"
+    },
+    {
+        "name": "Krawaty 13",
+        "date": "2022-01-19",
+        "city": "Warszawa",
+        "location": "Klub Adeptus Mechanicus al. Krakowska 114, Warszawa",
+        "format": 1995,
+        "event_url": "https://forum.kingsofwar.pl/showthread.php?tid=72",
+        "signup_url": "https://tabletop.to/krawaty-13"
+    }
 ]
