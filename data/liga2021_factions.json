@@ -1,0 +1,67 @@
+[
+    {
+        "faction": "",
+        "played_count": 17,
+        "player_count": 13
+    },
+    {
+        "faction": "Undead",
+        "played_count": 5,
+        "player_count": 4
+    },
+    {
+        "faction": "The Empire of Dust",
+        "played_count": 3,
+        "player_count": 2
+    },
+    {
+        "faction": "Elves",
+        "played_count": 2,
+        "player_count": 2
+    },
+    {
+        "faction": "Forces of the Abyss",
+        "played_count": 2,
+        "player_count": 2
+    },
+    {
+        "faction": "Abyssal Dwarfs",
+        "played_count": 2,
+        "player_count": 1
+    },
+    {
+        "faction": "Dwarfs",
+        "played_count": 2,
+        "player_count": 1
+    },
+    {
+        "faction": "Night-stalkers",
+        "played_count": 2,
+        "player_count": 1
+    },
+    {
+        "faction": "Ogres",
+        "played_count": 2,
+        "player_count": 1
+    },
+    {
+        "faction": "Goblins",
+        "played_count": 1,
+        "player_count": 1
+    },
+    {
+        "faction": "Order of the Green Lady",
+        "played_count": 1,
+        "player_count": 1
+    },
+    {
+        "faction": "The League of Rhordia",
+        "played_count": 1,
+        "player_count": 1
+    },
+    {
+        "faction": "The Trident Realm of Neritica",
+        "played_count": 1,
+        "player_count": 1
+    }
+]

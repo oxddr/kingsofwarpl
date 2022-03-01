@@ -8,9 +8,11 @@
 
 {{ define "content" }}
 {{ $season := printf "liga%d" .Params.season }}
-{{ $seasonData := index $.Site.Data $season }}
+{{ $rankingData := index $.Site.Data .Params.ranking }}
+{{ $factionData := index $.Site.Data .Params.factions }}
+{{ $eventsData := index $.Site.Data .Params.events}}
 
-<div class="text-center">Liczba graczy: {{ len $seasonData.data.ranking }}</div>
+<div class="text-center">Liczba graczy: {{ len $rankingData }}</div>
 <table class="table table-hover">
   <thead>
     <tr>
@@ -20,11 +22,11 @@
     </tr>
   </thead>
   <tbody>
-    {{ range $seasonData.data.ranking }}
+    {{ range $rankingData }}
     <tr>
       <td>{{ .rank }}</td>
       <td>
-        <a href="{{ .id | printf "player/%s" | relURL }}" >{{ .player }}</a>
+        <a href="{{ .id | printf "player/%s" | relURL }}" >{{ .name }}</a>
       </td>
       <td>{{ .points }}</td>
     </tr>
@@ -42,11 +44,11 @@
     </tr>
   </thead>
   <tbody>
-    {{ range $seasonData.data.tournaments }}
+    {{ range $eventsData }}
     <tr>
-      <td>{{ time.Format "2006-01-02" .tournament.date }}</td>
-      <td><a href="{{ .tournament.url }}">{{ .tournament.name }}</a></td>
-      <td>{{ len .players }}</td>
+      <td>{{ time.Format "2006-01-02" .date }}</td>
+      <td><a href="{{ .tournament.url }}">{{ .name }}</a></td>
+      <td>{{ .players }}</td>
     </tr>
     {{ end }}
   </tbody>
@@ -62,11 +64,11 @@
     </tr>
   </thead>
   <tbody>
-    {{ range $seasonData.data.factions }}
+    {{ range $factionData }}
     <tr>
-      <td>{{ .name }}</td>
-      <td>{{ .no_players }}</td>
-      <td>{{ .times_played }}</td>
+      <td>{{ .faction }}</td>
+      <td>{{ .player_count }}</td>
+      <td>{{ .played_count }}</td>
     </tr>
     {{ end }}
   </tbody>

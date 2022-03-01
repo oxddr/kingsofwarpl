@@ -1,7 +1,9 @@
 ---
 title: Ranking Ligi 2022
 type: ranking
-season: 2022
+ranking: liga2022_ranking
+events:	liga2022_tournaments
+factions:  liga2022_factions
 menu:
   main:
     name: Ranking
