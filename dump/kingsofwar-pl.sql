@@ -11,6 +11,7 @@ INSERT INTO Events VALUES(7,'4 Turniej Mistrzostw Polski Kings of War 2021-BIAŁ
 INSERT INTO Events VALUES(8,'II turniej cyklu MISTRZOSTW POLSKI Kings of War, 2021','Katowice','Liga 2021','https://tabletop.to/ii-turniej-cyklu-mistrzostw-polski-kings-of-war-2021','Inny Wymiar, Katowice, ul. Bożogrobców 20',2300,'2021-02-27',NULL);
 INSERT INTO Events VALUES(9,'Pierwszy turniej ligi 2021 Warszawa','Warszawa','Liga 2021','https://tabletop.to/1-turniej-ligi-kings-of-war-2021-warszawa','Klub Adeptus Mechanicus al. Krakowska 114, Warszawa',2100,'2021-01-24',NULL);
 INSERT INTO Events VALUES(10,'III Turniej Ligi Kings of War 2021','Warszawa','Liga 2021','https://tabletop.to/iii-turniej-ligi-kings-of-war-polska-2021','Klub Adeptus Mechanicus al. Krakowska 114, Warszawa',1900,'2021-04-18',NULL);
+INSERT INTO Events VALUES(11,replace('III turniej Ligii King''s of War - Iława\n','\n',char(10)),'Iława','Liga 2022','https://tabletop.to/iii-turniej-ligii-kings-of-war-2022-iawa',replace('Galeria Jeziorak, Królowej Jadwigi 6, 14-202 Iława\n','\n',char(10)),2100,'2022-03-19','https://www.facebook.com/events/1784968688374307');
 CREATE TABLE Series (name TEXT PRIMARY KEY NOT NULL);
 INSERT INTO Series VALUES('Liga 2022');
 INSERT INTO Series VALUES('Liga 2021');
@@ -149,5 +150,5 @@ INSERT INTO Players VALUES('Kacper "Alien" Szczytowski','kacper-alien-szczytowsk
 INSERT INTO Players VALUES('Kacper Rasiński','kacper-rasinski');
 INSERT INTO Players VALUES('Maciej"UFO" Szczytowski','maciejufo-szczytowski');
 DELETE FROM sqlite_sequence;
-INSERT INTO sqlite_sequence VALUES('Events',10);
+INSERT INTO sqlite_sequence VALUES('Events',11);
 COMMIT;
