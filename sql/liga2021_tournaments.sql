@@ -1,6 +1,6 @@
 SELECT name,
        date,
-       website,
+       tabletop_url,
        count() AS players
   FROM Events e
        JOIN

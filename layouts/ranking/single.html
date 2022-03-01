@@ -47,7 +47,7 @@
     {{ range $eventsData }}
     <tr>
       <td>{{ time.Format "2006-01-02" .date }}</td>
-      <td><a href="{{ .tournament.url }}">{{ .name }}</a></td>
+      <td><a href="{{ .tabletop_url }}">{{ .name }}</a></td>
       <td>{{ .players }}</td>
     </tr>
     {{ end }}
