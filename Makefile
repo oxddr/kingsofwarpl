@@ -38,7 +38,5 @@ $(tttscraper_bin): tools/tttscraper/*.go tools/cmd/tttscraper/main.go
 $(scribe_bin): tools/cmd/scribe/main.go tools/ranking/*.go tools/model/*.go
 	cd tools/cmd/scribe/ && go build .
 
-$(players_bin): tools/cmd/players/main.go
-	cd tools/cmd/players && go build .
 tttscraper: tools/cmd/tttscraper2/main.go
 	go build -o $@ $<
