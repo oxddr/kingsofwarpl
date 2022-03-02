@@ -7,6 +7,10 @@
 {{ end }}
 
 {{ define "content" }}
+<h6 style="text-align: center">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSegfrplIpFshNtUw_dzuiT9g-MVprau0Dws3oGW8pt5H7BqKA/viewform">Zgłoś nowe wydarzenie</a>
+</h6>
+
 <h2>Nadchodzące</h2>
 <div class="list-group">
   {{ range sort $.Site.Data.events "date" "asc" }}
