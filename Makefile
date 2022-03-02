@@ -29,5 +29,5 @@ gen-players: sql/players.sql
 	rm -f content/player/*.md
 	cat $< | sqlite3 $(db) | jq .[].tabletop_id | scripts/gen_players.sh
 
-tttscraper: tools/cmd/tttscraper2/main.go
-	go build -o $@ $<
+tttscraper: $(shell find tools/tttscraper2/ -name '*.go')
+	go build -o $@ ./tools/tttscraper2

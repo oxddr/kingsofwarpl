@@ -1,7 +1,8 @@
 public/
 .hugo_build.lock
 
-tttscraper
-tttscraper2
+/tttscraper
+/tttscraper2
+/tools/tttscraper2/tttscraper2
 
 kingsofwar-pl.sqlite3

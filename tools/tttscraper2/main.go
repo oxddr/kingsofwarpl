@@ -6,9 +6,6 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/oxddr/kingsofwarpl/tools/model"
-	"github.com/oxddr/kingsofwarpl/tools/tttscraper"
-
 	_ "github.com/mattn/go-sqlite3"
 )
 
@@ -19,7 +16,7 @@ var (
 	dryRun       = flag.Bool("dry_run", true, "If true, no changes to database are made")
 )
 
-func save(results *model.TournamentResults) error {
+func save(results *TournamentResults) error {
 	db, err := sql.Open("sqlite3", *databasePath)
 	if err != nil {
 		return fmt.Errorf("unable to open database from %q: %v", *databasePath, err)
@@ -70,7 +67,7 @@ func save(results *model.TournamentResults) error {
 	return nil
 }
 
-func descResults(results *model.TournamentResults) string {
+func descResults(results *TournamentResults) string {
 	res := fmt.Sprintf("Tournament: %s\n", results.Tournament.Name)
 	res += "id faction tp bonus_tp attr\n"
 	for _, p := range results.Players {
@@ -82,7 +79,7 @@ func descResults(results *model.TournamentResults) string {
 func main() {
 	flag.Parse()
 
-	results, err := tttscraper.Scrape(*eventURL)
+	results, err := Scrape(*eventURL)
 	if err != nil {
 		log.Fatalf("Unable to scraper %q: %v", *eventURL, err)
 	}

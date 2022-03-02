@@ -1,16 +1,14 @@
-package tttscraper
+package main
 
 import (
 	"fmt"
 	"net/http"
 	"regexp"
-	"sort"
 	"strconv"
 	"strings"
 	"time"
 
 	"github.com/PuerkitoBio/goquery"
-	"github.com/oxddr/kingsofwarpl/tools/model"
 	"go.uber.org/multierr"
 )
 
@@ -27,7 +25,7 @@ var (
 	columns = []string{PLAYER, TP, BONUS_TP, ATTR, FACTION}
 )
 
-func Scrape(url string) (*model.TournamentResults, error) {
+func Scrape(url string) (*TournamentResults, error) {
 	res, err := http.Get(url)
 	if err != nil {
 		return nil, fmt.Errorf("unable to download %q: %v", url, err)
@@ -51,10 +49,9 @@ func Scrape(url string) (*model.TournamentResults, error) {
 	if err != nil {
 		return nil, fmt.Errorf("unable to extract tournament's players: %v", err)
 	}
-	rankPlayers(players)
 
-	return &model.TournamentResults{
-		Tournament: &model.Tournament{
+	return &TournamentResults{
+		Tournament: &Tournament{
 			Name:     extractName(doc),
 			Date:     dt,
 			Location: extractLocation(doc),
@@ -88,7 +85,7 @@ func extractLocation(doc *goquery.Document) string {
 	return loc
 }
 
-func extractPlayers(doc *goquery.Document) ([]*model.Player, error) {
+func extractPlayers(doc *goquery.Document) ([]*SingleResult, error) {
 	indices := map[int]string{}
 	doc.Find("#ladder thead tr").Each(func(i int, s *goquery.Selection) {
 		s.Find("th").Each(func(i int, s *goquery.Selection) {
@@ -101,10 +98,10 @@ func extractPlayers(doc *goquery.Document) ([]*model.Player, error) {
 		})
 	})
 
-	var players []*model.Player
+	var players []*SingleResult
 	var mErr error
 	doc.Find("#ladder tbody tr").Each(func(_ int, s *goquery.Selection) {
-		p := &model.Player{}
+		p := &SingleResult{}
 		s.Find("td").Each(func(i int, s *goquery.Selection) {
 			v, ok := indices[i]
 			if !ok {
@@ -141,17 +138,4 @@ func extractPlayers(doc *goquery.Document) ([]*model.Player, error) {
 		players = append(players, p)
 	})
 	return players, mErr
-}
-
-func rankPlayers(players []*model.Player) {
-	sort.Slice(players, func(i, j int) bool {
-		if players[i].TotalTP() != players[j].TotalTP() {
-			return players[i].TotalTP() > players[j].TotalTP()
-		}
-		return players[i].AttritionPoints > players[j].AttritionPoints
-	})
-
-	for i, p := range players {
-		p.Rank = i + 1
-	}
 }
