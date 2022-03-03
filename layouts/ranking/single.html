@@ -7,10 +7,10 @@
 {{ end }}
 
 {{ define "content" }}
-{{ $season := printf "liga%d" .Params.season }}
-{{ $rankingData := index $.Site.Data .Params.ranking }}
-{{ $factionData := index $.Site.Data .Params.factions }}
-{{ $eventsData := index $.Site.Data .Params.events}}
+
+{{ $rankingData := index $.Site.Data (printf "ranking_%d" .Params.season) }}
+{{ $factionData := index $.Site.Data (printf "factions_%d" .Params.season) }}
+{{ $eventsData := index $.Site.Data (printf "events_%d" .Params.season)}}
 
 <div class="text-center">Liczba graczy: {{ len $rankingData }}</div>
 <table class="table table-hover">
