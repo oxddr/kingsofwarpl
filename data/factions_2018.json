@@ -25,7 +25,7 @@
         "player_count": 3
     },
     {
-        "faction": "The Trident Realm of Neritica",
+        "faction": "Trident Realm of Neritica",
         "played_count": 9,
         "player_count": 3
     },
@@ -35,12 +35,12 @@
         "player_count": 3
     },
     {
-        "faction": "The Brotherhood",
+        "faction": "Brotherhood",
         "played_count": 4,
         "player_count": 3
     },
     {
-        "faction": "The Herd",
+        "faction": "Herd",
         "played_count": 8,
         "player_count": 2
     },
@@ -70,6 +70,16 @@
         "player_count": 1
     },
     {
+        "faction": "Empire of Dust",
+        "played_count": 1,
+        "player_count": 1
+    },
+    {
+        "faction": "Forces of Nature",
+        "played_count": 1,
+        "player_count": 1
+    },
+    {
         "faction": "Goblins",
         "played_count": 1,
         "player_count": 1
@@ -85,17 +95,7 @@
         "player_count": 1
     },
     {
-        "faction": "The Empire of Dust",
-        "played_count": 1,
-        "player_count": 1
-    },
-    {
-        "faction": "The Forces of Nature",
-        "played_count": 1,
-        "player_count": 1
-    },
-    {
-        "faction": "The Varangur",
+        "faction": "Varangur",
         "played_count": 1,
         "player_count": 1
     }

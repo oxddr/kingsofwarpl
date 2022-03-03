@@ -10,7 +10,7 @@
         "player_count": 4
     },
     {
-        "faction": "The Empire of Dust",
+        "faction": "Empire of Dust",
         "played_count": 3,
         "player_count": 2
     },
@@ -50,17 +50,17 @@
         "player_count": 1
     },
     {
+        "faction": "League of Rhordia",
+        "played_count": 1,
+        "player_count": 1
+    },
+    {
         "faction": "Order of the Green Lady",
         "played_count": 1,
         "player_count": 1
     },
     {
-        "faction": "The League of Rhordia",
-        "played_count": 1,
-        "player_count": 1
-    },
-    {
-        "faction": "The Trident Realm of Neritica",
+        "faction": "Trident Realm of Neritica",
         "played_count": 1,
         "player_count": 1
     }

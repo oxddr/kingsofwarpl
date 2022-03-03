@@ -121,7 +121,7 @@ func extractPlayers(doc *goquery.Document) ([]*SingleResult, error) {
 				}
 			case FACTION:
 				if s.Text() != "-" {
-					p.Faction = s.Text()
+					p.Faction = strings.ReplaceAll(s.Text(), "The ", "")
 				}
 			case TP:
 				p.TP, err = strconv.Atoi(s.Text())

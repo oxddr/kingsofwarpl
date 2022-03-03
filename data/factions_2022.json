@@ -45,12 +45,22 @@
         "player_count": 1
     },
     {
-        "faction": "The Trident Realm of Neritica",
+        "faction": "Trident Realm of Neritica",
         "played_count": 2,
         "player_count": 1
     },
     {
+        "faction": "Empire of Dust",
+        "played_count": 1,
+        "player_count": 1
+    },
+    {
         "faction": "Free Dwarfs",
+        "played_count": 1,
+        "player_count": 1
+    },
+    {
+        "faction": "Herd",
         "played_count": 1,
         "player_count": 1
     },
@@ -65,17 +75,7 @@
         "player_count": 1
     },
     {
-        "faction": "The Empire of Dust",
-        "played_count": 1,
-        "player_count": 1
-    },
-    {
-        "faction": "The Herd",
-        "played_count": 1,
-        "player_count": 1
-    },
-    {
-        "faction": "The Varangur",
+        "faction": "Varangur",
         "played_count": 1,
         "player_count": 1
     }
