@@ -1,0 +1,102 @@
+[
+    {
+        "faction": "Dwarfs",
+        "played_count": 23,
+        "player_count": 6
+    },
+    {
+        "faction": "Undead",
+        "played_count": 13,
+        "player_count": 4
+    },
+    {
+        "faction": "Orcs",
+        "played_count": 8,
+        "player_count": 4
+    },
+    {
+        "faction": "Ratkin",
+        "played_count": 8,
+        "player_count": 4
+    },
+    {
+        "faction": "Kingdoms of Men",
+        "played_count": 9,
+        "player_count": 3
+    },
+    {
+        "faction": "The Trident Realm of Neritica",
+        "played_count": 9,
+        "player_count": 3
+    },
+    {
+        "faction": "Elves",
+        "played_count": 7,
+        "player_count": 3
+    },
+    {
+        "faction": "The Brotherhood",
+        "played_count": 4,
+        "player_count": 3
+    },
+    {
+        "faction": "The Herd",
+        "played_count": 8,
+        "player_count": 2
+    },
+    {
+        "faction": "Basilea",
+        "played_count": 3,
+        "player_count": 2
+    },
+    {
+        "faction": "Abyssal Dwarfs",
+        "played_count": 2,
+        "player_count": 2
+    },
+    {
+        "faction": "Twilight Kin",
+        "played_count": 2,
+        "player_count": 2
+    },
+    {
+        "faction": "Forces of the Abyss",
+        "played_count": 3,
+        "player_count": 1
+    },
+    {
+        "faction": "Ogres",
+        "played_count": 2,
+        "player_count": 1
+    },
+    {
+        "faction": "Goblins",
+        "played_count": 1,
+        "player_count": 1
+    },
+    {
+        "faction": "Night-stalkers",
+        "played_count": 1,
+        "player_count": 1
+    },
+    {
+        "faction": "Salamanders",
+        "played_count": 1,
+        "player_count": 1
+    },
+    {
+        "faction": "The Empire of Dust",
+        "played_count": 1,
+        "player_count": 1
+    },
+    {
+        "faction": "The Forces of Nature",
+        "played_count": 1,
+        "player_count": 1
+    },
+    {
+        "faction": "The Varangur",
+        "played_count": 1,
+        "player_count": 1
+    }
+]

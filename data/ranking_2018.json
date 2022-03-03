@@ -1,0 +1,298 @@
+[
+    {
+        "id": "misio",
+        "name": "MiSiO",
+        "rank": 1,
+        "points": 233,
+        "tie_breaker1": 233,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "kazan2",
+        "name": "Kazan",
+        "rank": 2,
+        "points": 212,
+        "tie_breaker1": 212,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "grzegorz-gregx",
+        "name": "Grzegorz Gregx",
+        "rank": 3,
+        "points": 206,
+        "tie_breaker1": 206,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "kamil-wichan",
+        "name": "Kamil Wichan",
+        "rank": 4,
+        "points": 159,
+        "tie_breaker1": 159,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "seba",
+        "name": "Seba",
+        "rank": 5,
+        "points": 148,
+        "tie_breaker1": 148,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "scoutmaster",
+        "name": "scoutmaster",
+        "rank": 6,
+        "points": 141,
+        "tie_breaker1": 141,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "micha-yergin-bartczak",
+        "name": "Micha\u0142 'Yergin' Bartczak",
+        "rank": 7,
+        "points": 138,
+        "tie_breaker1": 138,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "ddr",
+        "name": "ddr",
+        "rank": 8,
+        "points": 132,
+        "tie_breaker1": 132,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "adam-athard-cychner",
+        "name": "Adam \"Athard\" Cychner",
+        "rank": 9,
+        "points": 124,
+        "tie_breaker1": 124,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "murmandamus",
+        "name": "Murmandamus",
+        "rank": 10,
+        "points": 113,
+        "tie_breaker1": 113,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "maciejufo-szczytowski",
+        "name": "Maciej\"UFO\" Szczytowski",
+        "rank": 11,
+        "points": 111,
+        "tie_breaker1": 111,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "matheo",
+        "name": "Matheo",
+        "rank": 12,
+        "points": 100,
+        "tie_breaker1": 100,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "mruku",
+        "name": "Mruku",
+        "rank": 13,
+        "points": 94,
+        "tie_breaker1": 94,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "artur-szyndler-senior2",
+        "name": "Artur Szyndler Senior",
+        "rank": 14,
+        "points": 88,
+        "tie_breaker1": 88,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "goboss",
+        "name": "GoBoss",
+        "rank": 15,
+        "points": 60,
+        "tie_breaker1": 60,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "rafal-troll",
+        "name": "Rafal 'Troll'",
+        "rank": 16,
+        "points": 38,
+        "tie_breaker1": 38,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "never2",
+        "name": "Never",
+        "rank": 17,
+        "points": 28,
+        "tie_breaker1": 28,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "bartoszwaw",
+        "name": "BartoszWaw",
+        "rank": 18,
+        "points": 27,
+        "tie_breaker1": 27,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "kacper-alien-szczytowski",
+        "name": "Kacper \"Alien\" Szczytowski",
+        "rank": 19,
+        "points": 27,
+        "tie_breaker1": 27,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "twister",
+        "name": "Twister",
+        "rank": 20,
+        "points": 27,
+        "tie_breaker1": 27,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "p18",
+        "name": "P.",
+        "rank": 21,
+        "points": 25,
+        "tie_breaker1": 25,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "przemek-szymusik",
+        "name": "Przemek Szymusik",
+        "rank": 22,
+        "points": 25,
+        "tie_breaker1": 25,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "jarosaw-kerangar-popielak",
+        "name": "Jaros\u0142aw \"Kerangar\" Popielak",
+        "rank": 23,
+        "points": 22,
+        "tie_breaker1": 22,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "robson-teoretyk",
+        "name": "Robson Teoretyk",
+        "rank": 24,
+        "points": 22,
+        "tie_breaker1": 22,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "never",
+        "name": "Never",
+        "rank": 25,
+        "points": 21,
+        "tie_breaker1": 21,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "dany",
+        "name": "Dany",
+        "rank": 26,
+        "points": 20,
+        "tie_breaker1": 20,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "rafa-kosiorel",
+        "name": "Rafa\u0142 Kosiorel",
+        "rank": 27,
+        "points": 20,
+        "tie_breaker1": 20,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "stanisaw-lajon-urbaniak",
+        "name": "Stanis\u0142aw \"Lajon\" Urbaniak",
+        "rank": 28,
+        "points": 20,
+        "tie_breaker1": 20,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "konrad-blaidwyn-motylinski",
+        "name": "Konrad 'Blaidwyn' Motyli\u0144ski",
+        "rank": 29,
+        "points": 19,
+        "tie_breaker1": 19,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "patryk-artemis-wolski",
+        "name": "Patryk 'Artemis' Wolski",
+        "rank": 30,
+        "points": 19,
+        "tie_breaker1": 19,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "roman-warecki",
+        "name": "Roman Warecki",
+        "rank": 31,
+        "points": 18,
+        "tie_breaker1": 18,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "arkadiusz-szyndler",
+        "name": "Arkadiusz Szyndler",
+        "rank": 32,
+        "points": 17,
+        "tie_breaker1": 17,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "bro-bru",
+        "name": "Bro Bru",
+        "rank": 33,
+        "points": 17,
+        "tie_breaker1": 17,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "jakub-ciesluk",
+        "name": "Jakub Ciesluk",
+        "rank": 34,
+        "points": 16,
+        "tie_breaker1": 16,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "szeperd",
+        "name": "Szeperd",
+        "rank": 35,
+        "points": 16,
+        "tie_breaker1": 16,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "paulina-viluir-popielak",
+        "name": "Paulina \"Viluir\" Popielak",
+        "rank": 36,
+        "points": 15,
+        "tie_breaker1": 15,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "pinka",
+        "name": "Pinka",
+        "rank": 37,
+        "points": 14,
+        "tie_breaker1": 14,
+        "tie_breaker2": "0.00"
+    }
+]
