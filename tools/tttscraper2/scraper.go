@@ -80,7 +80,7 @@ func extractDate(doc *goquery.Document) (time.Time, error) {
 func extractLocation(doc *goquery.Document) string {
 	var loc string
 	doc.Find("li[title='Location']").Each(func(_ int, s *goquery.Selection) {
-		loc = strings.Split(strings.TrimSpace(s.Text()), "/")[2]
+		loc = strings.TrimSpace(s.Text())
 	})
 	return loc
 }
