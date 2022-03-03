@@ -1,0 +1,77 @@
+[
+    {
+        "faction": "Undead",
+        "played_count": 6,
+        "player_count": 5
+    },
+    {
+        "faction": "Elves",
+        "played_count": 6,
+        "player_count": 3
+    },
+    {
+        "faction": "Ogres",
+        "played_count": 6,
+        "player_count": 3
+    },
+    {
+        "faction": "Forces of the Abyss",
+        "played_count": 3,
+        "player_count": 3
+    },
+    {
+        "faction": "Kingdoms of Men",
+        "played_count": 3,
+        "player_count": 3
+    },
+    {
+        "faction": "Night-stalkers",
+        "played_count": 7,
+        "player_count": 2
+    },
+    {
+        "faction": "Dwarfs",
+        "played_count": 4,
+        "player_count": 2
+    },
+    {
+        "faction": "Orcs",
+        "played_count": 4,
+        "player_count": 2
+    },
+    {
+        "faction": "The Empire of Dust",
+        "played_count": 3,
+        "player_count": 2
+    },
+    {
+        "faction": "The Forces of Nature",
+        "played_count": 3,
+        "player_count": 2
+    },
+    {
+        "faction": "Northern Alliance",
+        "played_count": 2,
+        "player_count": 2
+    },
+    {
+        "faction": "Ratkin",
+        "played_count": 2,
+        "player_count": 2
+    },
+    {
+        "faction": "The Trident Realm of Neritica",
+        "played_count": 3,
+        "player_count": 1
+    },
+    {
+        "faction": "",
+        "played_count": 1,
+        "player_count": 1
+    },
+    {
+        "faction": "The League of Rhordia",
+        "played_count": 1,
+        "player_count": 1
+    }
+]

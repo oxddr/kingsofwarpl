@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Liga 2022",
+        "fullname": "Liga 2022",
+        "season": "2022"
+    },
+    {
+        "name": "Liga 2021",
+        "fullname": "Liga 2021",
+        "season": "2021"
+    },
+    {
+        "name": "MP 2020",
+        "fullname": "Mistrzostwa Polski 2020",
+        "season": "2020"
+    },
+    {
+        "name": "MP 2019",
+        "fullname": "Mistrzostwa Polski 2019",
+        "season": "2019"
+    },
+    {
+        "name": "MP 2018",
+        "fullname": "Mistrzostwa Polski 2018",
+        "season": "2018"
+    }
+]

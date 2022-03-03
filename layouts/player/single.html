@@ -23,24 +23,20 @@
   <h2>Wyniki</h2>
 
   {{ $currentPage := . }}
-  {{ $seasons := (slice 2022 2021 2019 2018) }}
-  {{ range $seasons }}
-    {{ $rankingData := index $.Site.Data (printf "ranking_%d" .) }}
-    {{ $resultData := index $.Site.Data (printf "results_%d" .) }}
-
+  {{ range $.Site.Data.series }}
+    {{ $rankingData := index $.Site.Data (printf "ranking_%s" .season) }}
+    {{ $resultData := index $.Site.Data (printf "results_%s" .season) }}
     {{ $results := where $resultData "id" $currentPlayer }}
 
     {{ if $results }}
       <div class="panel panel-default">
         <div class="panel-heading">
           <div class="pull-left">
-            Liga {{ . }}
+            <a href="/ranking-{{ .season }}">{{ .fullname }}</a>
           </div>
           <div class="pull-right">
-            {{ range $rankingData }}
-              {{ if eq $currentPlayer .id }}
-                Miejsce: <strong>{{ .rank }}</strong> | Punkty: <strong>{{ .points }}</strong>
-              {{ end }}
+            {{ range first 1 (where $rankingData "id" $currentPlayer)}}
+              Miejsce: <strong>{{ .rank }}</strong> | Punkty: <strong>{{ .points }}</strong>
             {{ end}}
           </div>
           <div class="clearfix"></div>
