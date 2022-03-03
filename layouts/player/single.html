@@ -28,42 +28,44 @@
     {{ $rankingData := index $.Site.Data (printf "liga%d_ranking" .) }}
     {{ $resultData := index $.Site.Data (printf "liga%d_results" .) }}
 
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <div class="pull-left">
-          Liga {{ . }}
+    {{ $results := where $resultData "id" $currentPlayer }}
+
+    {{ if $results }}
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="pull-left">
+            Liga {{ . }}
+          </div>
+          <div class="pull-right">
+            {{ range $rankingData }}
+              {{ if eq $currentPlayer .id }}
+                Miejsce: <strong>{{ .rank }}</strong> | Punkty: <strong>{{ .points }}</strong>
+              {{ end }}
+            {{ end}}
+          </div>
+          <div class="clearfix"></div>
         </div>
-        <div class="pull-right">
-          {{ range $rankingData }}
-            {{ if eq $currentPlayer .id }}
-              Miejsce: <strong>{{ .rank }}</strong> | Punkty: <strong>{{ .points }}</strong>
-            {{ end }}
-          {{ end}}
-        </div>
-        <div class="clearfix"></div>
-      </div>
-      <table class="table table-hover">
-        <thead>
-          <tr>
-            <td style="width: 15%">Data</td>
-            <td>Turniej</td>
-            <td style="width: 10%">Miejsce</td>
-            <td style="width: 10%">Punkty</td>
-          </tr>
-        </thead>
-        <tbody>
-          {{ range $resultData }}
-            {{ if eq $currentPlayer .id }}
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <td style="width: 15%">Data</td>
+              <td>Turniej</td>
+              <td style="width: 10%">Miejsce</td>
+              <td style="width: 10%">Punkty</td>
+            </tr>
+          </thead>
+          <tbody>
+            {{ range $results }}
               <tr class="{{ if .is_ranked }}success{{ end }}">
                 <td>{{ time.Format "2006-01-02" .event_date }}</td>
                 <td><a href="{{ .tabletop_url }}">{{ .event_name }}</a></td>
                 <td>{{ .event_rank }}</td>
                 <td>{{ .points }}</td>
               </tr>
-            {{ end }}
-          {{ end}}
-        </tbody>
-      </table>
-    </div>
+            {{ end}}
+          </tbody>
+        </table>
+      </div>
+    {{ end }}
   {{ end }}
 {{ end }}
