@@ -1,15 +1,4 @@
 db = kingsofwar-pl.sqlite3
-data = \
-	data/events.json \
-	data/events_2021.json \
-	data/events_2022.json \
-	data/factions_2021.json \
-	data/factions_2022.json \
-	data/players.json \
-	data/ranking_2021.json \
-	data/ranking_2022.json \
-	data/results_2021.json \
-	data/results_2022.json
 
 db-restore: dump/kingsofwar-pl.sql
 	rm -f $(db)
@@ -21,7 +10,7 @@ db-dump: $(db)
 data-clean:
 	rm -f data/*
 
-data-build: $(data)
+data-build: $(shell find sql -name "*.sql" | sed 's/sql/data/' | sed 's/sql/json/')
 
 data/%.json: sql/%.sql $(db)
 	echo '.mode json' | cat - $< | sqlite3 $(db) | python -m json.tool > $@

@@ -1,0 +1,322 @@
+[
+    {
+        "id": "misio",
+        "name": "MiSiO",
+        "rank": 1,
+        "points": 178,
+        "tie_breaker1": 231,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "scoutmaster",
+        "name": "scoutmaster",
+        "rank": 2,
+        "points": 173,
+        "tie_breaker1": 223,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "makras",
+        "name": "Makras",
+        "rank": 3,
+        "points": 166,
+        "tie_breaker1": 212,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "kazan2",
+        "name": "Kazan",
+        "rank": 4,
+        "points": 149,
+        "tie_breaker1": 183,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "adam-athard-cychner",
+        "name": "Adam \"Athard\" Cychner",
+        "rank": 5,
+        "points": 147,
+        "tie_breaker1": 188,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "kamil-wichan",
+        "name": "Kamil Wichan",
+        "rank": 6,
+        "points": 138,
+        "tie_breaker1": 156,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "stanisaw-lajon-urbaniak",
+        "name": "Stanis\u0142aw \"Lajon\" Urbaniak",
+        "rank": 7,
+        "points": 128,
+        "tie_breaker1": 159,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "maciejufo-szczytowski",
+        "name": "Maciej\"UFO\" Szczytowski",
+        "rank": 8,
+        "points": 124,
+        "tie_breaker1": 124,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "grzegorz-gregx",
+        "name": "Grzegorz Gregx",
+        "rank": 9,
+        "points": 116,
+        "tie_breaker1": 116,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "goboss",
+        "name": "GoBoss",
+        "rank": 10,
+        "points": 108,
+        "tie_breaker1": 108,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "ddr",
+        "name": "ddr",
+        "rank": 11,
+        "points": 107,
+        "tie_breaker1": 107,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "bartoszwaw",
+        "name": "BartoszWaw",
+        "rank": 12,
+        "points": 99,
+        "tie_breaker1": 99,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "rafal-troll",
+        "name": "Rafal 'Troll'",
+        "rank": 13,
+        "points": 97,
+        "tie_breaker1": 97,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "murmandamus",
+        "name": "Murmandamus",
+        "rank": 14,
+        "points": 96,
+        "tie_breaker1": 96,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "bart3",
+        "name": "Bart",
+        "rank": 15,
+        "points": 80,
+        "tie_breaker1": 80,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "shizunk",
+        "name": "Shizunk",
+        "rank": 16,
+        "points": 52,
+        "tie_breaker1": 52,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "patryk-artemis-wolski",
+        "name": "Patryk 'Artemis' Wolski",
+        "rank": 17,
+        "points": 44,
+        "tie_breaker1": 44,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "p18",
+        "name": "P.",
+        "rank": 18,
+        "points": 42,
+        "tie_breaker1": 42,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "teo-tomrider",
+        "name": "Teo TomRider",
+        "rank": 19,
+        "points": 42,
+        "tie_breaker1": 42,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "lires",
+        "name": "Lires",
+        "rank": 20,
+        "points": 41,
+        "tie_breaker1": 41,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "seba",
+        "name": "Seba",
+        "rank": 21,
+        "points": 35,
+        "tie_breaker1": 35,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "ukasz-oyabin-majewski",
+        "name": "\u0141ukasz \"Oyabin\" Majewski",
+        "rank": 22,
+        "points": 35,
+        "tie_breaker1": 35,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "pawe-pawluczuk",
+        "name": "Pawe\u0142 Pawluczuk",
+        "rank": 23,
+        "points": 34,
+        "tie_breaker1": 34,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "kacper-rasinski",
+        "name": "Kacper Rasi\u0144ski",
+        "rank": 24,
+        "points": 32,
+        "tie_breaker1": 32,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "matheo",
+        "name": "Matheo",
+        "rank": 25,
+        "points": 30,
+        "tie_breaker1": 30,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "boczek",
+        "name": "BoczeK",
+        "rank": 26,
+        "points": 27,
+        "tie_breaker1": 27,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "nenuphar2",
+        "name": "Nenuphar",
+        "rank": 27,
+        "points": 27,
+        "tie_breaker1": 27,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "micha-yergin-bartczak",
+        "name": "Micha\u0142 'Yergin' Bartczak",
+        "rank": 28,
+        "points": 23,
+        "tie_breaker1": 23,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "serenitka",
+        "name": "Serenitka",
+        "rank": 29,
+        "points": 22,
+        "tie_breaker1": 22,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "myter",
+        "name": "Myter",
+        "rank": 30,
+        "points": 21,
+        "tie_breaker1": 21,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "rafa-pancer-kosiorek",
+        "name": "Rafa\u0142 Pancer Kosiorek",
+        "rank": 31,
+        "points": 21,
+        "tie_breaker1": 21,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "bartomiej",
+        "name": "Bart\u0142omiej ",
+        "rank": 32,
+        "points": 19,
+        "tie_breaker1": 19,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "damian-fakapu-fiedoruk",
+        "name": "Damian \"Fakapu\" Fiedoruk",
+        "rank": 33,
+        "points": 19,
+        "tie_breaker1": 19,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "artur-stasienko",
+        "name": "Artur Stasie\u0144ko",
+        "rank": 34,
+        "points": 17,
+        "tie_breaker1": 17,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "sebastian-torki-rutkowski",
+        "name": "Sebastian Torki Rutkowski",
+        "rank": 35,
+        "points": 17,
+        "tie_breaker1": 17,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "rafastrongestavenger-swierkot",
+        "name": "Rafa\u0142\"StrongestAvenger\" \u015awierkot",
+        "rank": 36,
+        "points": 13,
+        "tie_breaker1": 13,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "grzegorz-czapski",
+        "name": "Grzegorz Czapski",
+        "rank": 37,
+        "points": 10,
+        "tie_breaker1": 10,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "kacper-alien-szczytowski",
+        "name": "Kacper \"Alien\" Szczytowski",
+        "rank": 38,
+        "points": 10,
+        "tie_breaker1": 10,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "konrad-blaidwyn-motylinski",
+        "name": "Konrad 'Blaidwyn' Motyli\u0144ski",
+        "rank": 39,
+        "points": 9,
+        "tie_breaker1": 9,
+        "tie_breaker2": "0.00"
+    },
+    {
+        "id": "bro-bru",
+        "name": "Bro Bru",
+        "rank": 40,
+        "points": 8,
+        "tie_breaker1": 8,
+        "tie_breaker2": "0.00"
+    }
+]

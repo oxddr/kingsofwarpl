@@ -1,0 +1,82 @@
+[
+    {
+        "faction": "Elves",
+        "played_count": 21,
+        "player_count": 6
+    },
+    {
+        "faction": "Dwarfs",
+        "played_count": 23,
+        "player_count": 5
+    },
+    {
+        "faction": "Ogres",
+        "played_count": 18,
+        "player_count": 5
+    },
+    {
+        "faction": "Forces of the Abyss",
+        "played_count": 10,
+        "player_count": 5
+    },
+    {
+        "faction": "The Empire of Dust",
+        "played_count": 11,
+        "player_count": 4
+    },
+    {
+        "faction": "Undead",
+        "played_count": 9,
+        "player_count": 4
+    },
+    {
+        "faction": "Orcs",
+        "played_count": 11,
+        "player_count": 3
+    },
+    {
+        "faction": "Basilea",
+        "played_count": 3,
+        "player_count": 2
+    },
+    {
+        "faction": "Ratkin",
+        "played_count": 3,
+        "player_count": 2
+    },
+    {
+        "faction": "Salamanders",
+        "played_count": 3,
+        "player_count": 2
+    },
+    {
+        "faction": "",
+        "played_count": 2,
+        "player_count": 2
+    },
+    {
+        "faction": "Kingdoms of Men",
+        "played_count": 2,
+        "player_count": 2
+    },
+    {
+        "faction": "Night-stalkers",
+        "played_count": 2,
+        "player_count": 2
+    },
+    {
+        "faction": "The Varangur",
+        "played_count": 2,
+        "player_count": 2
+    },
+    {
+        "faction": "The Trident Realm of Neritica",
+        "played_count": 8,
+        "player_count": 1
+    },
+    {
+        "faction": "Goblins",
+        "played_count": 1,
+        "player_count": 1
+    }
+]

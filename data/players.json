@@ -1,7 +1,83 @@
 [
     {
+        "tabletop_id": "adam-athard-cychner",
+        "name": "Adam \"Athard\" Cychner"
+    },
+    {
+        "tabletop_id": "arkadiusz-szyndler",
+        "name": "Arkadiusz Szyndler"
+    },
+    {
+        "tabletop_id": "artur-stasienko",
+        "name": "Artur Stasie\u0144ko"
+    },
+    {
+        "tabletop_id": "artur-szyndler-senior2",
+        "name": "Artur Szyndler Senior"
+    },
+    {
+        "tabletop_id": "artur3",
+        "name": "Artur"
+    },
+    {
         "tabletop_id": "bart3",
         "name": "Bart"
+    },
+    {
+        "tabletop_id": "bartomiej",
+        "name": "Bart\u0142omiej "
+    },
+    {
+        "tabletop_id": "bartosz-amanowicz",
+        "name": "Bartosz Amanowicz"
+    },
+    {
+        "tabletop_id": "bartoszwaw",
+        "name": "BartoszWaw"
+    },
+    {
+        "tabletop_id": "berdysz",
+        "name": "Berdysz"
+    },
+    {
+        "tabletop_id": "blady5",
+        "name": "Blady "
+    },
+    {
+        "tabletop_id": "boczek",
+        "name": "BoczeK"
+    },
+    {
+        "tabletop_id": "bro-bru",
+        "name": "Bro Bru"
+    },
+    {
+        "tabletop_id": "bye46",
+        "name": "bye"
+    },
+    {
+        "tabletop_id": "bye9",
+        "name": "BYE"
+    },
+    {
+        "tabletop_id": "czart",
+        "name": "Czart"
+    },
+    {
+        "tabletop_id": "damian-fakapu-fiedoruk",
+        "name": "Damian \"Fakapu\" Fiedoruk"
+    },
+    {
+        "tabletop_id": "dany",
+        "name": "Dany"
+    },
+    {
+        "tabletop_id": "daria-ostrowska",
+        "name": "Daria Ostrowska"
+    },
+    {
+        "tabletop_id": "ddr",
+        "name": "ddr"
     },
     {
         "tabletop_id": "eledan",
@@ -12,88 +88,28 @@
         "name": "Gobos"
     },
     {
-        "tabletop_id": "teo-tomrider",
-        "name": "Teo TomRider"
+        "tabletop_id": "goboss",
+        "name": "GoBoss"
     },
     {
-        "tabletop_id": "seba",
-        "name": "Seba"
-    },
-    {
-        "tabletop_id": "berdysz",
-        "name": "Berdysz"
-    },
-    {
-        "tabletop_id": "oldwin",
-        "name": "Oldwin"
-    },
-    {
-        "tabletop_id": "myter",
-        "name": "Myter"
-    },
-    {
-        "tabletop_id": "pawe-pawluczuk",
-        "name": "Pawe\u0142 Pawluczuk"
-    },
-    {
-        "tabletop_id": "adam-athard-cychner",
-        "name": "Adam \"Athard\" Cychner"
-    },
-    {
-        "tabletop_id": "nieumary-plankton",
-        "name": "Nieumar\u0142y Pla(nk)ton"
-    },
-    {
-        "tabletop_id": "kazan2",
-        "name": "Kazan"
-    },
-    {
-        "tabletop_id": "kamil-wichan",
-        "name": "Kamil Wichan"
-    },
-    {
-        "tabletop_id": "stanisaw-lajon-urbaniak",
-        "name": "Stanis\u0142aw \"Lajon\" Urbaniak"
-    },
-    {
-        "tabletop_id": "misio",
-        "name": "MiSiO"
-    },
-    {
-        "tabletop_id": "rafal-troll",
-        "name": "Rafal 'Troll'"
+        "tabletop_id": "grzegorz-czapski",
+        "name": "Grzegorz Czapski"
     },
     {
         "tabletop_id": "grzegorz-gregx",
         "name": "Grzegorz Gregx"
     },
     {
-        "tabletop_id": "makras",
-        "name": "Makras"
+        "tabletop_id": "grzegorz-kudaty-stefanek",
+        "name": "Grzegorz \"Kud\u0142aty\" Stefanek"
     },
     {
-        "tabletop_id": "lires",
-        "name": "Lires"
+        "tabletop_id": "jakub-ciesluk",
+        "name": "Jakub Ciesluk"
     },
     {
-        "tabletop_id": "ddr",
-        "name": "ddr"
-    },
-    {
-        "tabletop_id": "bartoszwaw",
-        "name": "BartoszWaw"
-    },
-    {
-        "tabletop_id": "lukasz-jarochowski",
-        "name": "Lukasz Jarochowski"
-    },
-    {
-        "tabletop_id": "rafastrongestavenger-swierkot",
-        "name": "Rafa\u0142\"StrongestAvenger\" \u015awierkot"
-    },
-    {
-        "tabletop_id": "damian-fakapu-fiedoruk",
-        "name": "Damian \"Fakapu\" Fiedoruk"
+        "tabletop_id": "jarosaw-kerangar-popielak",
+        "name": "Jaros\u0142aw \"Kerangar\" Popielak"
     },
     {
         "tabletop_id": "kacper-alien-szczytowski",
@@ -104,7 +120,179 @@
         "name": "Kacper Rasi\u0144ski"
     },
     {
+        "tabletop_id": "kamil-wichan",
+        "name": "Kamil Wichan"
+    },
+    {
+        "tabletop_id": "kazan2",
+        "name": "Kazan"
+    },
+    {
+        "tabletop_id": "konrad-blaidwyn-motylinski",
+        "name": "Konrad 'Blaidwyn' Motyli\u0144ski"
+    },
+    {
+        "tabletop_id": "lires",
+        "name": "Lires"
+    },
+    {
+        "tabletop_id": "lukasz-jarochowski",
+        "name": "Lukasz Jarochowski"
+    },
+    {
+        "tabletop_id": "maciej-bogusawski",
+        "name": "Maciej Bogus\u0142awski"
+    },
+    {
         "tabletop_id": "maciejufo-szczytowski",
         "name": "Maciej\"UFO\" Szczytowski"
+    },
+    {
+        "tabletop_id": "makras",
+        "name": "Makras"
+    },
+    {
+        "tabletop_id": "mateo",
+        "name": "mateo"
+    },
+    {
+        "tabletop_id": "matheo",
+        "name": "Matheo"
+    },
+    {
+        "tabletop_id": "micha-yergin-bartczak",
+        "name": "Micha\u0142 'Yergin' Bartczak"
+    },
+    {
+        "tabletop_id": "misio",
+        "name": "MiSiO"
+    },
+    {
+        "tabletop_id": "mruku",
+        "name": "Mruku"
+    },
+    {
+        "tabletop_id": "murmandamus",
+        "name": "Murmandamus"
+    },
+    {
+        "tabletop_id": "myter",
+        "name": "Myter"
+    },
+    {
+        "tabletop_id": "nenuphar2",
+        "name": "Nenuphar"
+    },
+    {
+        "tabletop_id": "never",
+        "name": "Never"
+    },
+    {
+        "tabletop_id": "never2",
+        "name": "Never"
+    },
+    {
+        "tabletop_id": "nieumary-plankton",
+        "name": "Nieumar\u0142y Pla(nk)ton"
+    },
+    {
+        "tabletop_id": "oldwin",
+        "name": "Oldwin"
+    },
+    {
+        "tabletop_id": "p18",
+        "name": "P."
+    },
+    {
+        "tabletop_id": "patryk-artemis-wolski",
+        "name": "Patryk 'Artemis' Wolski"
+    },
+    {
+        "tabletop_id": "paulina-viluir-popielak",
+        "name": "Paulina \"Viluir\" Popielak"
+    },
+    {
+        "tabletop_id": "pawe-pawluczuk",
+        "name": "Pawe\u0142 Pawluczuk"
+    },
+    {
+        "tabletop_id": "pinka",
+        "name": "Pinka"
+    },
+    {
+        "tabletop_id": "przemek-szymusik",
+        "name": "Przemek Szymusik"
+    },
+    {
+        "tabletop_id": "rafa-kosiorel",
+        "name": "Rafa\u0142 Kosiorel"
+    },
+    {
+        "tabletop_id": "rafa-pancer-kosiorek",
+        "name": "Rafa\u0142 Pancer Kosiorek"
+    },
+    {
+        "tabletop_id": "rafa-swierkot",
+        "name": "Rafa\u0142 \u015awierkot"
+    },
+    {
+        "tabletop_id": "rafal-troll",
+        "name": "Rafal 'Troll'"
+    },
+    {
+        "tabletop_id": "rafastrongestavenger-swierkot",
+        "name": "Rafa\u0142\"StrongestAvenger\" \u015awierkot"
+    },
+    {
+        "tabletop_id": "robson-teoretyk",
+        "name": "Robson Teoretyk"
+    },
+    {
+        "tabletop_id": "roman-warecki",
+        "name": "Roman Warecki"
+    },
+    {
+        "tabletop_id": "scoutmaster",
+        "name": "scoutmaster"
+    },
+    {
+        "tabletop_id": "seba",
+        "name": "Seba"
+    },
+    {
+        "tabletop_id": "sebastian-torki-rutkowski",
+        "name": "Sebastian Torki Rutkowski"
+    },
+    {
+        "tabletop_id": "serenitka",
+        "name": "Serenitka"
+    },
+    {
+        "tabletop_id": "shizunk",
+        "name": "Shizunk"
+    },
+    {
+        "tabletop_id": "stanisaw-lajon-urbaniak",
+        "name": "Stanis\u0142aw \"Lajon\" Urbaniak"
+    },
+    {
+        "tabletop_id": "szeperd",
+        "name": "Szeperd"
+    },
+    {
+        "tabletop_id": "teo-tomrider",
+        "name": "Teo TomRider"
+    },
+    {
+        "tabletop_id": "twister",
+        "name": "Twister"
+    },
+    {
+        "tabletop_id": "ukasz-oyabin-majewski",
+        "name": "\u0141ukasz \"Oyabin\" Majewski"
+    },
+    {
+        "tabletop_id": "yaro",
+        "name": "Yaro"
     }
 ]
