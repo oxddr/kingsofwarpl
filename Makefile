@@ -1,31 +1,32 @@
 db = kingsofwar-pl.sqlite3
-data = data/events.json \
-	data/liga2021_factions.json \
-	data/liga2021_ranking.json \
-	data/liga2021_results.json \
-	data/liga2021_tournaments.json \
-	data/liga2022_factions.json \
-	data/liga2022_ranking.json \
-	data/liga2022_results.json \
-	data/liga2022_tournaments.json \
-	data/players.json
+data = \
+	data/events.json \
+	data/events_2021.json \
+	data/events_2022.json \
+	data/factions_2021.json \
+	data/factions_2022.json \
+	data/players.json \
+	data/ranking_2021.json \
+	data/ranking_2022.json \
+	data/results_2021.json \
+	data/results_2022.json
 
 db-restore: dump/kingsofwar-pl.sql
 	rm -f $(db)
 	sqlite3 $(db) < $<
 
-db-dump:
+db-dump: $(db)
 	sqlite3 $(db) '.dump' > dump/kingsofwar-pl.sql
 
 data-clean:
-	rm -f $(data)
+	rm -f data/*
 
 data-build: $(data)
 
-$(data): data/%.json: sql/%.sql $(db)
+data/%.json: sql/%.sql $(db)
 	echo '.mode json' | cat - $< | sqlite3 $(db) | python -m json.tool > $@
 
-gen-players: sql/players.sql
+gen-players: sql/players.sql $(db)
 	rm -f content/player/*.md
 	cat $< | sqlite3 $(db) | jq .[].tabletop_id | scripts/gen_players.sh
 

@@ -1,7 +1,7 @@
 ---
 title: Ranking Ligi 2021
 type: ranking
-ranking: liga2021_ranking
-events:	liga2021_tournaments
-factions:  liga2021_factions
+ranking: ranking_2021
+events:	events_2021
+factions: factions_2021
 ---
