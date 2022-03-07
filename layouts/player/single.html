@@ -52,7 +52,7 @@
           </thead>
           <tbody>
             {{ range $results }}
-              <tr class="{{ if .is_ranked }}success{{ end }}">
+              <tr class="{{ if not .is_ranked }}warning{{ end }}">
                 <td>{{ time.Format "2006-01-02" .event_date }}</td>
                 <td><a href="{{ .tabletop_url }}">{{ .event_name }}</a></td>
                 <td>{{ .event_rank }}</td>
@@ -64,4 +64,5 @@
       </div>
     {{ end }}
   {{ end }}
+  <div class="text-center">Na zółto oznaczono turnieje <strong>nie zaliczone</strong> do ostatecznego rankingu </div>
 {{ end }}
