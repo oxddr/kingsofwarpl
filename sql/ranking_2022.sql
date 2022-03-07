@@ -2,25 +2,28 @@ WITH ranking_points AS (
     SELECT player,
            31 - rank() OVER (PARTITION BY event ORDER BY tp + bonus_tp DESC,
                 attrition_points DESC) AS points,
-           event, 
-           1.0 * attrition_points / e.format as nap
+           event,
+           1.0 * attrition_points / e.format as nap,
+           best_of
       FROM Results r
            JOIN
            Events e ON r.event = e.id
+           Join series s on s.name = e.series
      WHERE series = 'Liga 2022'
 ),
 ranking_points_sorted AS (
     SELECT player,
            points,
-           nap, 
-           row_number() OVER (PARTITION BY player ORDER BY points DESC) AS result_rank
+           nap,
+           row_number() OVER (PARTITION BY player ORDER BY points DESC) AS result_rank,
+           best_of
       FROM ranking_points
 ),
 ranked_points AS (
     SELECT player,
            sum(points) AS ranked_points
       FROM ranking_points_sorted
-     WHERE result_rank <= 2
+     WHERE result_rank <= best_of
      GROUP BY player
 ),
 total_points AS (
@@ -47,4 +50,3 @@ ranking_ranks AS (
 )
 SELECT *
   FROM ranking_ranks;
-
