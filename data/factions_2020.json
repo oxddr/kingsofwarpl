@@ -1,16 +1,21 @@
 [
     {
+        "faction": "",
+        "played_count": 19,
+        "player_count": 16
+    },
+    {
         "faction": "Undead",
-        "played_count": 6,
+        "played_count": 7,
         "player_count": 5
     },
     {
-        "faction": "Elves",
-        "played_count": 6,
+        "faction": "Ogres",
+        "played_count": 7,
         "player_count": 3
     },
     {
-        "faction": "Ogres",
+        "faction": "Elves",
         "played_count": 6,
         "player_count": 3
     },
@@ -26,7 +31,7 @@
     },
     {
         "faction": "Night-stalkers",
-        "played_count": 7,
+        "played_count": 8,
         "player_count": 2
     },
     {
@@ -61,12 +66,7 @@
     },
     {
         "faction": "Trident Realm of Neritica",
-        "played_count": 3,
-        "player_count": 1
-    },
-    {
-        "faction": "",
-        "played_count": 1,
+        "played_count": 4,
         "player_count": 1
     },
     {

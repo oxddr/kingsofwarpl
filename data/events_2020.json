@@ -12,10 +12,22 @@
         "players": 12
     },
     {
+        "name": "4 turniej MP Kings of War Warszawa",
+        "date": "2020-08-15",
+        "tabletop_url": "https://tabletop.to/4-turniej-mp-kings-of-war-warszawa",
+        "players": 16
+    },
+    {
         "name": "Echa Primovantoru II : Radom Kings of War : II Turniej Mistrzostw Polski",
         "date": "2020-07-05",
         "tabletop_url": "https://tabletop.to/echa-primovantoru-ii-radom-kings-of-war",
         "players": 10
+    },
+    {
+        "name": "[MP][29.02] II turniej mistrzostw Polski 2020! Katowice",
+        "date": "2020-02-29",
+        "tabletop_url": "https://www.tabletop.to/mp2902-ii-turniej-mistrzostw-polski-2020-katowice",
+        "players": 6
     },
     {
         "name": "[MP][26.01] Pierwszy turniej mistrzostw Polski 2020! Warszawa",

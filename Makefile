@@ -17,7 +17,7 @@ data/%.json: sql/%.sql $(db)
 
 gen-players: sql/players.sql $(db)
 	rm -f content/player/*.md
-	cat $< | sqlite3 $(db) | jq .[].tabletop_id | scripts/gen_players.sh
+	echo '.mode json' | cat - $< | sqlite3 $(db) | jq -r .[].tabletop_id | scripts/gen_players.sh
 
 tttscraper: $(shell find tools/tttscraper2/ -name '*.go')
 	go build -o $@ ./tools/tttscraper2

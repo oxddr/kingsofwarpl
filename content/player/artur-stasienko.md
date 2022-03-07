@@ -1,0 +1,3 @@
+---
+player: artur-stasienko
+---
