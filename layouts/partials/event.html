@@ -3,7 +3,7 @@
   <br>
   <p class="list-group-item-text">
     <span class="glyphicon glyphicon-calendar"></span>
-    {{ time.Format "02.01.2006" .date }}
+    {{ time.Format "02.01.2006" .date }}{{ if .end_date }} - {{ time.Format "02.01.2006" .end_date }}{{ end }}
   </p>
   <a class="list-group-item-text"
      href="https://www.google.com/maps/search/?api=1&query={{ .location }}"
@@ -22,11 +22,15 @@
     </a>
   </p>
   {{ if .signup_url }}
-  <p class="list-group-item-text">
-    <a href="{{ .signup_url }}">
-      <span class="glyphicon glyphicon-pencil"></span>
-      Zapisy
-    </a>
-  </p>
+    <p class="list-group-item-text">
+      <a href="{{ .signup_url }}">
+        <span class="glyphicon glyphicon-pencil"></span>
+        Zapisy
+      </a>
+    </p>
+  {{ end }}
+  {{ if .notes }}
+    <hr>
+    <p>{{ .notes }}</p>
   {{ end }}
 </div>
