@@ -1,5 +1,7 @@
 db = kingsofwar-pl.sqlite3
 
+all: data-build gen-players db-dump
+
 db-restore: dump/kingsofwar-pl.sql
 	rm -f $(db)
 	sqlite3 $(db) < $<
