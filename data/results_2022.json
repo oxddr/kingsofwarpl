@@ -1,5 +1,115 @@
 [
     {
+        "id": "damian-fakapu-fiedoruk",
+        "name": "Damian \"Fakapu\" Fiedoruk",
+        "tabletop_url": "https://tabletop.to/iii-turniej-ligii-kings-of-war-2022-iawa",
+        "event_name": "III turniej Ligii King's of War - I\u0142awa\n",
+        "event_date": "2022-03-19",
+        "event_rank": 6,
+        "points": 25,
+        "rank": 1,
+        "is_ranked": 1
+    },
+    {
+        "id": "dany",
+        "name": "Dany",
+        "tabletop_url": "https://tabletop.to/iii-turniej-ligii-kings-of-war-2022-iawa",
+        "event_name": "III turniej Ligii King's of War - I\u0142awa\n",
+        "event_date": "2022-03-19",
+        "event_rank": 10,
+        "points": 21,
+        "rank": 1,
+        "is_ranked": 1
+    },
+    {
+        "id": "ddr",
+        "name": "ddr",
+        "tabletop_url": "https://tabletop.to/iii-turniej-ligii-kings-of-war-2022-iawa",
+        "event_name": "III turniej Ligii King's of War - I\u0142awa\n",
+        "event_date": "2022-03-19",
+        "event_rank": 3,
+        "points": 28,
+        "rank": 3,
+        "is_ranked": 1
+    },
+    {
+        "id": "eledan",
+        "name": "Eledan",
+        "tabletop_url": "https://tabletop.to/iii-turniej-ligii-kings-of-war-2022-iawa",
+        "event_name": "III turniej Ligii King's of War - I\u0142awa\n",
+        "event_date": "2022-03-19",
+        "event_rank": 9,
+        "points": 22,
+        "rank": 1,
+        "is_ranked": 1
+    },
+    {
+        "id": "kacper-alien-szczytowski",
+        "name": "Kacper \"Alien\" Szczytowski",
+        "tabletop_url": "https://tabletop.to/iii-turniej-ligii-kings-of-war-2022-iawa",
+        "event_name": "III turniej Ligii King's of War - I\u0142awa\n",
+        "event_date": "2022-03-19",
+        "event_rank": 4,
+        "points": 27,
+        "rank": 1,
+        "is_ranked": 1
+    },
+    {
+        "id": "lires",
+        "name": "Lires",
+        "tabletop_url": "https://tabletop.to/iii-turniej-ligii-kings-of-war-2022-iawa",
+        "event_name": "III turniej Ligii King's of War - I\u0142awa\n",
+        "event_date": "2022-03-19",
+        "event_rank": 1,
+        "points": 30,
+        "rank": 1,
+        "is_ranked": 1
+    },
+    {
+        "id": "makras",
+        "name": "Makras",
+        "tabletop_url": "https://tabletop.to/iii-turniej-ligii-kings-of-war-2022-iawa",
+        "event_name": "III turniej Ligii King's of War - I\u0142awa\n",
+        "event_date": "2022-03-19",
+        "event_rank": 2,
+        "points": 29,
+        "rank": 2,
+        "is_ranked": 1
+    },
+    {
+        "id": "oldwin",
+        "name": "Oldwin",
+        "tabletop_url": "https://tabletop.to/iii-turniej-ligii-kings-of-war-2022-iawa",
+        "event_name": "III turniej Ligii King's of War - I\u0142awa\n",
+        "event_date": "2022-03-19",
+        "event_rank": 8,
+        "points": 23,
+        "rank": 1,
+        "is_ranked": 1
+    },
+    {
+        "id": "retor",
+        "name": "Ret-or",
+        "tabletop_url": "https://tabletop.to/iii-turniej-ligii-kings-of-war-2022-iawa",
+        "event_name": "III turniej Ligii King's of War - I\u0142awa\n",
+        "event_date": "2022-03-19",
+        "event_rank": 7,
+        "points": 24,
+        "rank": 1,
+        "is_ranked": 1
+    },
+    {
+        "id": "stanisaw-lajon-urbaniak",
+        "name": "Stanis\u0142aw \"Lajon\" Urbaniak",
+        "tabletop_url": "https://tabletop.to/iii-turniej-ligii-kings-of-war-2022-iawa",
+        "event_name": "III turniej Ligii King's of War - I\u0142awa\n",
+        "event_date": "2022-03-19",
+        "event_rank": 5,
+        "points": 26,
+        "rank": 1,
+        "is_ranked": 1
+    },
+    {
         "id": "adam-athard-cychner",
         "name": "Adam \"Athard\" Cychner",
         "tabletop_url": "https://tabletop.to/ii-turniej-ligii-kings-of-war-2022-krakow",
@@ -62,7 +172,7 @@
         "event_date": "2022-02-26",
         "event_rank": 10,
         "points": 21,
-        "rank": 1,
+        "rank": 2,
         "is_ranked": 1
     },
     {
@@ -95,7 +205,7 @@
         "event_date": "2022-02-26",
         "event_rank": 12,
         "points": 19,
-        "rank": 1,
+        "rank": 2,
         "is_ranked": 1
     },
     {
@@ -106,7 +216,7 @@
         "event_date": "2022-02-26",
         "event_rank": 3,
         "points": 28,
-        "rank": 1,
+        "rank": 2,
         "is_ranked": 1
     },
     {
@@ -172,7 +282,7 @@
         "event_date": "2022-02-26",
         "event_rank": 20,
         "points": 11,
-        "rank": 2,
+        "rank": 3,
         "is_ranked": 1
     },
     {
@@ -205,7 +315,7 @@
         "event_date": "2022-02-26",
         "event_rank": 8,
         "points": 23,
-        "rank": 2,
+        "rank": 3,
         "is_ranked": 1
     },
     {
@@ -260,7 +370,7 @@
         "event_date": "2022-01-22",
         "event_rank": 11,
         "points": 20,
-        "rank": 2,
+        "rank": 3,
         "is_ranked": 1
     },
     {
@@ -293,7 +403,7 @@
         "event_date": "2022-01-22",
         "event_rank": 3,
         "points": 28,
-        "rank": 1,
+        "rank": 2,
         "is_ranked": 1
     },
     {
@@ -337,7 +447,7 @@
         "event_date": "2022-01-22",
         "event_rank": 10,
         "points": 21,
-        "rank": 1,
+        "rank": 2,
         "is_ranked": 1
     },
     {
@@ -359,7 +469,7 @@
         "event_date": "2022-01-22",
         "event_rank": 6,
         "points": 25,
-        "rank": 1,
+        "rank": 2,
         "is_ranked": 1
     },
     {

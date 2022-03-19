@@ -1,11 +1,21 @@
 [
     {
         "faction": "Undead",
-        "played_count": 5,
+        "played_count": 6,
         "player_count": 4
     },
     {
         "faction": "Basilea",
+        "played_count": 5,
+        "player_count": 2
+    },
+    {
+        "faction": "Forces of the Abyss",
+        "played_count": 4,
+        "player_count": 2
+    },
+    {
+        "faction": "Night-stalkers",
         "played_count": 4,
         "player_count": 2
     },
@@ -15,17 +25,12 @@
         "player_count": 2
     },
     {
-        "faction": "Forces of the Abyss",
-        "played_count": 3,
-        "player_count": 2
-    },
-    {
-        "faction": "Night-stalkers",
-        "played_count": 3,
-        "player_count": 2
-    },
-    {
         "faction": "Abyssal Dwarfs",
+        "played_count": 2,
+        "player_count": 2
+    },
+    {
+        "faction": "Empire of Dust",
         "played_count": 2,
         "player_count": 2
     },
@@ -35,12 +40,27 @@
         "player_count": 2
     },
     {
+        "faction": "Northern Alliance",
+        "played_count": 2,
+        "player_count": 2
+    },
+    {
+        "faction": "Goblins",
+        "played_count": 3,
+        "player_count": 1
+    },
+    {
         "faction": "Elves",
         "played_count": 2,
         "player_count": 1
     },
     {
-        "faction": "Goblins",
+        "faction": "Herd",
+        "played_count": 2,
+        "player_count": 1
+    },
+    {
+        "faction": "Ogres",
         "played_count": 2,
         "player_count": 1
     },
@@ -50,27 +70,12 @@
         "player_count": 1
     },
     {
-        "faction": "Empire of Dust",
+        "faction": "",
         "played_count": 1,
         "player_count": 1
     },
     {
         "faction": "Free Dwarfs",
-        "played_count": 1,
-        "player_count": 1
-    },
-    {
-        "faction": "Herd",
-        "played_count": 1,
-        "player_count": 1
-    },
-    {
-        "faction": "Northern Alliance",
-        "played_count": 1,
-        "player_count": 1
-    },
-    {
-        "faction": "Ogres",
         "played_count": 1,
         "player_count": 1
     },
